@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+        <property name="cacheManager" ref="ehCacheManager"></property>
+    </bean>
+
+    <bean id="credentialsMatcher" class="com.gaohuan.shiro.credentials.RetryLimitHashedCredentialsMatcher">
+        <constructor-arg name="cacheManager" ref="cacheManager"/>
+        <property name="hashAlgorithmName" value="md5"/>
+        <property name="storedCredentialsHexEncoded" value="true"/>
+        <property name="hashIterations" value="2"/>
+    </bean>
+
+    <bean id="userRealm" class="com.gaohuan.shiro.realm.UserRealm">
+        <property name="cacheManager" ref="cacheManager"/>
+        <property name="credentialsMatcher" ref="credentialsMatcher"/>
+    </bean>
+
+</beans>
