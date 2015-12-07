@@ -28,6 +28,7 @@
         </fileset>
         <fileset id="fileset2" name="Spring MVC" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/spring-mvc.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-config.xml</file>
         </fileset>
       </configuration>
     </facet>
