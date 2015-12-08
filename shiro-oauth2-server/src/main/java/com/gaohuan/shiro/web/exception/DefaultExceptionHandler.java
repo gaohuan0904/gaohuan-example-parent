@@ -1,4 +1,4 @@
-package com.gaohuan.shiro.web;
+package com.gaohuan.shiro.web.exception;
 
 import org.apache.shiro.authz.UnauthorizedException;
 import org.springframework.http.HttpStatus;

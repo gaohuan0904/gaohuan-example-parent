@@ -70,20 +70,19 @@ public class UserController {
         return "redirect:/user";
     }
 
-    @RequestMapping(value = "/{id}/changePassword")
-    public String showChangePasswordForm(@PathVariable("id") Long id ,Model model){
-        model.addAttribute("user",userService.findOne(id));
-        model.addAttribute("op","修改密码");
+    @RequestMapping(value = "/{id}/changePassword", method = RequestMethod.GET)
+    public String showChangePasswordForm(@PathVariable("id") Long id, Model model) {
+        model.addAttribute("user", userService.findOne(id));
+        model.addAttribute("op", "修改密码");
         return "user/changePassword";
     }
 
-    @RequestMapping(value = "/{id}/changePassword")
-    public String changePassword(@PathVariable("id") Long id ,String newPassword, RedirectAttributes redirectAttributes){
-        userService.changePassword(id,newPassword);
-        redirectAttributes.addAttribute("msg","修改密码成功");
+    @RequestMapping(value = "/{id}/changePassword", method = RequestMethod.POST)
+    public String changePassword(@PathVariable("id") Long id, String newPassword, RedirectAttributes redirectAttributes) {
+        userService.changePassword(id, newPassword);
+        redirectAttributes.addAttribute("msg", "修改密码成功");
         return "redirect:/user";
     }
-
 
 
 }
