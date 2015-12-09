@@ -15,9 +15,7 @@ import org.apache.oltu.oauth2.common.exception.OAuthSystemException;
 import org.apache.oltu.oauth2.common.message.OAuthResponse;
 import org.apache.oltu.oauth2.common.message.types.GrantType;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.stereotype.Controller;
 
 import javax.servlet.http.HttpServletRequest;
@@ -79,8 +77,11 @@ public class AccessTokenController {
                 .setRealm(Constants.RESOURCE_SERVER_REALM)
                 .error(OAuthProblemException.error(e.getMessage()))
                 .buildJSONMessage();
+        //解决中文乱码问题
+        HttpHeaders httpHeaders= new HttpHeaders();
+        httpHeaders.setContentType(MediaType.valueOf("application/json;charset=utf-8"));
 
-        return new ResponseEntity(oAuthResponse.getBody(), HttpStatus.valueOf(oAuthResponse.getResponseStatus()));
+        return new ResponseEntity(oAuthResponse.getBody(),httpHeaders, HttpStatus.valueOf(oAuthResponse.getResponseStatus()));
     }
 
 }

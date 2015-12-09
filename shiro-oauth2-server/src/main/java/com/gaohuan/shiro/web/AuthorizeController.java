@@ -9,6 +9,7 @@ import org.apache.oltu.oauth2.as.issuer.OAuthIssuer;
 import org.apache.oltu.oauth2.as.issuer.OAuthIssuerImpl;
 import org.apache.oltu.oauth2.as.request.OAuthAuthzRequest;
 import org.apache.oltu.oauth2.as.response.OAuthASResponse;
+import org.apache.oltu.oauth2.common.OAuth;
 import org.apache.oltu.oauth2.common.exception.OAuthProblemException;
 import org.apache.oltu.oauth2.common.exception.OAuthSystemException;
 import org.apache.oltu.oauth2.common.message.OAuthResponse;
@@ -19,6 +20,7 @@ import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -46,8 +48,9 @@ public class AuthorizeController {
     public Object authorize(Model model, HttpServletRequest request) throws OAuthProblemException, OAuthSystemException, URISyntaxException {
 
         //构建授权请求
-        OAuthAuthzRequest oAuthAuthzRequest = new OAuthAuthzRequest(request);
         try {
+            OAuthAuthzRequest oAuthAuthzRequest = new OAuthAuthzRequest(request);
+
             String clientId = oAuthAuthzRequest.getClientId();
 
             //检查clientId是否正确
@@ -69,7 +72,7 @@ public class AuthorizeController {
             String username = (String) subject.getPrincipal();
             //生成授权码
             String authorizeCode = null;
-            String responseType = oAuthAuthzRequest.getParam(ResponseType.CODE.toString());
+            String responseType = oAuthAuthzRequest.getParam(OAuth.OAUTH_RESPONSE_TYPE);
             if (responseType.equals(ResponseType.CODE.toString())) {
                 OAuthIssuer oAuthIssuer = new OAuthIssuerImpl(new MD5Generator());
                 authorizeCode = oAuthIssuer.authorizationCode();
@@ -78,6 +81,7 @@ public class AuthorizeController {
 
             //构建OAuth响应
             OAuthResponse oAuthResponse = OAuthASResponse.authorizationResponse(request, HttpServletResponse.SC_FOUND)//重定向状态
+                    .setCode(authorizeCode)
                     .location(oAuthAuthzRequest.getRedirectURI())//客户端重定向地址
                     .buildQueryMessage();
 
@@ -87,13 +91,14 @@ public class AuthorizeController {
 
             return new ResponseEntity(httpHeaders, HttpStatus.valueOf(oAuthResponse.getResponseStatus()));
         } catch (Exception e) {
-            return errorResponse(oAuthAuthzRequest, e);
+            return errorResponse(e);
         }
     }
 
 
     /**
      * 验证登录
+     *
      * @param subject
      * @param request
      * @return
@@ -114,6 +119,7 @@ public class AuthorizeController {
             subject.login(usernamePasswordToken);
             return true;
         } catch (Exception e) {
+
             request.setAttribute("error", "登录失败");
             return false;
         }
@@ -121,20 +127,24 @@ public class AuthorizeController {
 
     /**
      * 处理错误
-     * @param request
+     *
+     * @param
      * @param e
      * @return
      * @throws OAuthSystemException
      */
-    private ResponseEntity errorResponse(OAuthAuthzRequest request, Exception e) throws OAuthSystemException {
+    private ResponseEntity errorResponse( Exception e) throws OAuthSystemException {
 
         //构建OAuth响应
         OAuthResponse oAuthResponse = OAuthASResponse.errorResponse(HttpServletResponse.SC_BAD_REQUEST)
                 .setRealm(Constants.RESOURCE_SERVER_REALM)
                 .error(OAuthProblemException.error(e.getMessage()))
                 .buildJSONMessage();
+        //解决中文乱码问题
+        HttpHeaders httpHeaders= new HttpHeaders();
+        httpHeaders.setContentType(MediaType.valueOf("application/json;charset=utf-8"));
 
-        return new ResponseEntity(oAuthResponse.getBody(), HttpStatus.valueOf(oAuthResponse.getResponseStatus()));
+        return new ResponseEntity(oAuthResponse.getBody(),httpHeaders, HttpStatus.valueOf(oAuthResponse.getResponseStatus()));
 
     }
 }

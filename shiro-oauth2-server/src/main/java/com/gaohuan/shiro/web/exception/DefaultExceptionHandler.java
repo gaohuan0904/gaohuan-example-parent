@@ -29,4 +29,19 @@ public class DefaultExceptionHandler {
         mav.setViewName("unauthorized");
         return mav;
     }
+
+    /**
+     * 默认异常处理
+     * @param request
+     * @param exception
+     * @return
+     */
+    @ExceptionHandler(value = {Exception.class,RuntimeException.class})
+    @ResponseStatus(value = HttpStatus.EXPECTATION_FAILED)
+    public ModelAndView processException(HttpServletRequest request, Exception exception) {
+        ModelAndView mav = new ModelAndView();
+        mav.addObject("exception", exception);
+        mav.setViewName("unauthorized");
+        return mav;
+    }
 }

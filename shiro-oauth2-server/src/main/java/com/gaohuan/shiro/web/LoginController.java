@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class LoginController {
 
-    @RequestMapping(value = "/login")
+    @RequestMapping(value = "/login" )
     public String showLoginForm(Model model, HttpServletRequest request) {
 
         String shiroExceptionClass = (String) request.getAttribute(FormAuthenticationFilter.DEFAULT_ERROR_KEY_ATTRIBUTE_NAME);
@@ -32,4 +32,5 @@ public class LoginController {
 
         return "login";
     }
+
 }

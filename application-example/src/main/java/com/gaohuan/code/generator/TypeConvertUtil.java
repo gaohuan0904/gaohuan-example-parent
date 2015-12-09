@@ -16,7 +16,7 @@ public class TypeConvertUtil {
     static {
         MAPPING_TYPE_MAP .put("varchar","String");
         MAPPING_TYPE_MAP .put("datetime","Date");
-        MAPPING_TYPE_MAP .put("tinyinttinyint","Integer");
+        MAPPING_TYPE_MAP .put("tinyint","Integer");
         MAPPING_TYPE_MAP .put("int","Integer");
         MAPPING_TYPE_MAP .put("bigint","Long");
         MAPPING_TYPE_MAP .put("decimal","BigDecimal");

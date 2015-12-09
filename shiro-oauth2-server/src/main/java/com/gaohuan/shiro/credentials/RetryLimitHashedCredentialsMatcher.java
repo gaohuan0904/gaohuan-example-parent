@@ -26,9 +26,11 @@ public class RetryLimitHashedCredentialsMatcher extends HashedCredentialsMatcher
         AtomicInteger count = passwordRetryCache.get(username);
         //第一次登陆
         if (count == null) {
-            passwordRetryCache.put(username, new AtomicInteger(0));
+            count= new AtomicInteger(0);
+            passwordRetryCache.put(username, count);
         }
         if (count.getAndIncrement() > 5) {
+
             throw new ExcessiveAttemptsException();
         }
 
