@@ -1,65 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="MySQL - @localhost" uuid="d924ed81-d361-4826-96d1-caca0225333f">
-    <database-info product="MySQL" version="5.7.9-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+  <data-source name="MySQL - shiro_oauth2@localhost" uuid="d924ed81-d361-4826-96d1-caca0225333f">
+    <database-info product="MySQL" version="5.0.24-community-nt" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
-    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.2">
-      <schema id="1" name="shiro_oauth2"/>
-      <table id="2" parent="1" name="oauth2_client"/>
-      <table id="3" parent="1" name="oauth2_user"/>
-      <column id="4" parent="2" name="id">
-        <comment>主键</comment>
-        <mandatory>1</mandatory>
-        <data-type>bigint(10)</data-type>
-      </column>
-      <column id="5" parent="2" name="client_id">
-        <comment>客户端id</comment>
-        <data-type>varchar(100)</data-type>
-      </column>
-      <column id="6" parent="2" name="client_name">
-        <comment>客户端名称</comment>
-        <data-type>varchar(100)</data-type>
-      </column>
-      <column id="7" parent="2" name="client_secret">
-        <comment>客户端安全key</comment>
-        <data-type>varchar(100)</data-type>
-      </column>
-      <key id="8" parent="2" name="PRIMARY">
-        <columns>id</columns>
-        <primary>1</primary>
-      </key>
-      <column id="9" parent="3" name="id">
-        <comment>id</comment>
-        <mandatory>1</mandatory>
-        <data-type>bigint(10)</data-type>
-      </column>
-      <column id="10" parent="3" name="username">
-        <comment>用户名</comment>
-        <data-type>varchar(100)</data-type>
-      </column>
-      <column id="11" parent="3" name="password">
-        <comment>密码</comment>
-        <data-type>varchar(100)</data-type>
-      </column>
-      <column id="12" parent="3" name="salt">
-        <comment>盐</comment>
-        <data-type>varchar(50)</data-type>
-      </column>
-      <index id="13" parent="3" name="index_oauth2_user_username">
-        <columns>username</columns>
-        <unique>1</unique>
-      </index>
-      <key id="14" parent="3" name="index_oauth2_user_username">
-        <columns>username</columns>
-        <underlying-index>index_oauth2_user_username</underlying-index>
-      </key>
-      <key id="15" parent="3" name="PRIMARY">
-        <columns>id</columns>
-        <primary>1</primary>
-      </key>
-    </database-model>
+    <schema name="" catalog="shiro_oauth2"/>
+    <table name="oauth2_client" schema="" catalog="shiro_oauth2" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="client_name" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="client_id" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="client_secret" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="idx_oauth2_client_client_id" unique="false" columns="client_id"/>
+    </table>
+    <table name="oauth2_user" schema="" catalog="shiro_oauth2" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="username" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="salt" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="idx_oauth2_user_username" unique="true" columns="username"/>
+    </table>
   </data-source>
 </component>

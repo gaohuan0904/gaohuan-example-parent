@@ -9,6 +9,7 @@ import org.apache.oltu.oauth2.as.issuer.OAuthIssuer;
 import org.apache.oltu.oauth2.as.issuer.OAuthIssuerImpl;
 import org.apache.oltu.oauth2.as.request.OAuthAuthzRequest;
 import org.apache.oltu.oauth2.as.response.OAuthASResponse;
+import org.apache.oltu.oauth2.common.OAuth;
 import org.apache.oltu.oauth2.common.exception.OAuthProblemException;
 import org.apache.oltu.oauth2.common.exception.OAuthSystemException;
 import org.apache.oltu.oauth2.common.message.OAuthResponse;
@@ -69,7 +70,7 @@ public class AuthorizeController {
             String username = (String) subject.getPrincipal();
             //生成授权码
             String authorizeCode = null;
-            String responseType = oAuthAuthzRequest.getParam(ResponseType.CODE.toString());
+            String responseType = oAuthAuthzRequest.getParam(OAuth.OAUTH_RESPONSE_TYPE);
             if (responseType.equals(ResponseType.CODE.toString())) {
                 OAuthIssuer oAuthIssuer = new OAuthIssuerImpl(new MD5Generator());
                 authorizeCode = oAuthIssuer.authorizationCode();
@@ -78,6 +79,7 @@ public class AuthorizeController {
 
             //构建OAuth响应
             OAuthResponse oAuthResponse = OAuthASResponse.authorizationResponse(request, HttpServletResponse.SC_FOUND)//重定向状态
+                    .setCode(authorizeCode)
                     .location(oAuthAuthzRequest.getRedirectURI())//客户端重定向地址
                     .buildQueryMessage();
 

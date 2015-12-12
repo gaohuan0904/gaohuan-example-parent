@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="shiro-oauth2-server:war exploded">
-    <output-path>$PROJECT_DIR$/shiro-oauth2-server/target/shiro-oauth2-server-1.0-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/shiro-oauth2-server/target/shiro-oauth2-client</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -50,7 +50,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/shiro-oauth2-server/target/shiro-oauth2-server-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/shiro-oauth2-server/target/shiro-oauth2-client/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="shiro-oauth2-server/web/Web" />
     </root>

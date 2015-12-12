@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="shiro-oauth2-server:war">
     <output-path>$PROJECT_DIR$/shiro-oauth2-server/target</output-path>
-    <root id="archive" name="shiro-oauth2-server-1.0-SNAPSHOT.war">
+    <root id="archive" name="shiro-oauth2-client.war">
       <element id="artifact" artifact-name="shiro-oauth2-server:war exploded" />
     </root>
   </artifact>

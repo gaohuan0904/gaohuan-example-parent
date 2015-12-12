@@ -34,6 +34,7 @@ public class ClientController {
         return "client/edit";
     }
 
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
     public String create(Client client, RedirectAttributes redirectAttributes) {
         clientService.createClient(client);
         redirectAttributes.addFlashAttribute("msg", "新增成功");

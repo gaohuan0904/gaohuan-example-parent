@@ -33,6 +33,7 @@ public class UserController {
         return "user/edit";
     }
 
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
     public String create(User user, RedirectAttributes redirectAttributes) {
         userService.createUser(user);
         redirectAttributes.addFlashAttribute("msg", "新增成功");

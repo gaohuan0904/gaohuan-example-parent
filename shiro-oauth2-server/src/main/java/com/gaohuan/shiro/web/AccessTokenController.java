@@ -19,6 +19,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -35,6 +36,7 @@ public class AccessTokenController {
     @Autowired
     private UserService userService;
 
+    @RequestMapping(value = "/accessToken")
     public HttpEntity token(HttpServletRequest request) throws OAuthSystemException {
         try {
             OAuthTokenRequest oAuthTokenRequest = new OAuthTokenRequest(request);
@@ -57,7 +59,7 @@ public class AccessTokenController {
 
             OAuthIssuer oAuthIssuer = new OAuthIssuerImpl(new MD5Generator());
             final String accessToken = oAuthIssuer.accessToken();
-            oauthService.addAccessToken(accessToken, oAuthTokenRequest.getUsername());
+            oauthService.addAccessToken(accessToken, oauthService.getUsernameByAuthCode(authCode));
 
             //生成Oauth响应
             OAuthResponse oAuthResponse = OAuthASResponse.tokenResponse(HttpServletResponse.SC_OK)

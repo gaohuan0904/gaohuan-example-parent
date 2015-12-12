@@ -57,6 +57,7 @@ public class UserDaoImpl implements UserDao {
     }
 
     public void changePassword(Long userId, String newPassword) {
+
         final String sql = "update oauth2_user set password=? where id=? ";
         jdbcTemplate.update(sql, newPassword, userId);
 
