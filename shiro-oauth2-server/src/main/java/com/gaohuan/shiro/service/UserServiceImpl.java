@@ -16,8 +16,12 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 
+    @Autowired
+    private PasswordHelper passwordHelper;
+
 
     public User createUser(User user) {
+        passwordHelper.encryptPassword(user);
         return userDao.createUser(user);
     }
 
@@ -30,7 +34,10 @@ public class UserServiceImpl implements UserService {
     }
 
     public void changePassword(Long userId, String newPassword) {
-            userDao.changePassword(userId,newPassword);
+        User user = userDao.findOne(userId);
+        user.setPassword(newPassword);
+        passwordHelper.encryptPassword(user);
+        userDao.updateUser(user);
     }
 
     public User findOne(Long userId) {

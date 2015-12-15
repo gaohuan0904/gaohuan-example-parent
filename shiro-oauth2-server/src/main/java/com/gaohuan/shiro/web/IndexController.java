@@ -3,7 +3,6 @@ package com.gaohuan.shiro.web;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Created by gh on 2015/12/8.
@@ -16,9 +15,7 @@ public class IndexController {
         return "index";
     }
 
-
-    @RequestMapping("/favicon.ico")
-    @ResponseBody
-    public void favicon() {
+    @RequestMapping(value = "/favicon.ico")
+    private void favicon() {
     }
 }

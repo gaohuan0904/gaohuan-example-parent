@@ -74,7 +74,7 @@ public class ClientDaoImpl implements ClientDao {
     }
 
     public Client findByClientId(String clientId) {
-        String sql = "SELECT  * FROM oauth2_client where client_id=?";
+        String sql = "SELECT  * FROM oauth2_client where client_Id=?";
         List<Client> clients = jdbcTemplate.query(sql, new BeanPropertyRowMapper(Client.class), clientId);
         if (CollectionUtils.isEmpty(clients)) {
             return null;
