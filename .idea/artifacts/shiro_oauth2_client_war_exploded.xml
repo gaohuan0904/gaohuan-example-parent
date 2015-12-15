@@ -12,7 +12,6 @@
           <element id="library" level="project" name="Maven: org.apache.oltu.oauth2:org.apache.oltu.oauth2.common:0.31" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.8" />
           <element id="library" level="project" name="Maven: org.codehaus.jettison:jettison:1.2" />
-          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.2" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-core:1.2.2" />
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.3" />
