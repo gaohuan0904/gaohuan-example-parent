@@ -1,9 +1,14 @@
 package com.gaohuan.thread.worker;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Created by gh on 2015/12/16.
  */
 public class WorkerThread extends Thread {
+    public static final Logger LOGGER = LoggerFactory.getLogger(WorkerThread.class);
+
     private Channel channel;
 
 
@@ -15,7 +20,12 @@ public class WorkerThread extends Thread {
     @Override
     public void run() {
         while (true) {
-            channel.takeRequest().execute();
+            LOGGER.debug("WorkerThread ready takeRequest..................");
+//            Request request = channel.takeRequest();
+            Request request = channel.takeRequestOutQueue();
+            request.execute();
+            LOGGER.debug("WorkerThread excute takeRequest!");
+
         }
 
     }

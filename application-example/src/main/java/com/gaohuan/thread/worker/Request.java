@@ -1,5 +1,8 @@
 package com.gaohuan.thread.worker;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Random;
 
 /**
@@ -7,10 +10,12 @@ import java.util.Random;
  * Created by gh on 2015/12/16.
  */
 public class Request {
+    public static final Logger LOGGER = LoggerFactory.getLogger(Request.class);
 
-    private final String name;
 
-    private final int number;
+    private String name;
+
+    private int number;
 
     private static final Random random = new Random();
 
@@ -20,12 +25,12 @@ public class Request {
     }
 
     public void execute() {
-        System.out.println(Thread.currentThread().getName() + "execute " + this);
-        try {
-            Thread.sleep(random.nextInt(1000));
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        LOGGER.debug(Thread.currentThread().getName() + " execute : " + this);
+//        try {
+//            Thread.sleep(random.nextInt(100));
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
 
     @Override

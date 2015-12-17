@@ -21,14 +21,15 @@ public class ClientThread extends Thread {
 
     @Override
     public void run() {
-        try {
+//        try {
             for (int i = 0; i < REQUEST_NUM; i++) {
                 Request request = new Request("Request" + i, i);
-                channel.putRequest(request);
-                Thread.sleep(random.nextInt(1000));
+//                channel.putRequest(request);
+                channel.putRequestInQueue(request);
+//                Thread.sleep(random.nextInt(100));
             }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
 }
