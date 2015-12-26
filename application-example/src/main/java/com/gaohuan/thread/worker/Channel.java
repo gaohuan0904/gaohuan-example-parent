@@ -61,7 +61,7 @@ public class Channel {
     public synchronized Request takeRequest() {
         while (count <= 0) {
             try {
-                wait();
+              wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
