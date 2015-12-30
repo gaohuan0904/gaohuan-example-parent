@@ -1,15 +1,28 @@
 package com.gaohuan.thread.worker;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
 /**
  * Created by gh on 2015/12/16.
  */
 public class Channel {
+    public static final Logger LOGGER = LoggerFactory.getLogger(Channel.class);
+
 
     public static final int MAX_REQUEST = 100;
 
     public static final int MAX_THREADS = 20;
 
+    //方式1
     private Request[] requestQueue;
+    //方式2
+    private BlockingQueue<Request> requestBlockingQueue = new ArrayBlockingQueue<Request>(MAX_REQUEST);
+    ;
+
 
     private int head;
 
@@ -44,7 +57,10 @@ public class Channel {
     }
 
     public synchronized void putRequest(Request request) {
+//        LOGGER.debug("queue array ---------- " + queueToString(requestQueue));
+        LOGGER.debug("putRequest begin :" + " tail=" + tail + " head=" + head + " count=" + count + " ==== " + request);
         while (count >= MAX_REQUEST) {
+            LOGGER.debug("putRequest wait()");
             try {
                 wait();
             } catch (InterruptedException e) {
@@ -54,22 +70,64 @@ public class Channel {
         requestQueue[tail] = request;
         tail = (tail + 1) % requestQueue.length;
         count++;
+        LOGGER.debug("putRequest end :" + " tail=" + tail + " head=" + head + " count=" + count);
+
         notifyAll();
 
     }
 
+    public void putRequestInQueue(Request request) {
+        try {
+            requestBlockingQueue.put(request);
+        } catch (InterruptedException e) {
+        }
+
+    }
+
     public synchronized Request takeRequest() {
+//        LOGGER.debug("queue array ----------\n " + queueToString(requestQueue));
+        LOGGER.debug("takeRequest begin :" + " tail=" + tail + " head=" + head + " count=" + count);
+
         while (count <= 0) {
+            LOGGER.debug("takeRequest wait()");
             try {
+<<<<<<< HEAD
               wait();
+=======
+
+                wait();
+>>>>>>> ae399a8f4c2fadcc130ad4011368927b520d639c
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        count--;
+        Request request = requestQueue[head];
         head = (head + 1) % requestQueue.length;
+        count--;
         notifyAll();
-        return requestQueue[head];
+        LOGGER.debug("takeRequest end :" + " tail=" + tail + " head=" + head + " count=" + count);
+        return request;
 
+    }
+
+    public Request takeRequestOutQueue() {
+        Request request = null;
+        try {
+            request = requestBlockingQueue.take();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return request;
+    }
+
+    public String queueToString(Request[] requestQueue) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < requestQueue.length; i++) {
+            Request request = requestQueue[i];
+            if (request != null) {
+                stringBuilder.append("i=" + i + " request=" + request + "\n");
+            }
+        }
+        return stringBuilder.toString();
     }
 }
