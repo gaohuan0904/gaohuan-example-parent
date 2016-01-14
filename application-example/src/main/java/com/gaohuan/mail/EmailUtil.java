@@ -1,4 +1,4 @@
-package com.gaohuan.mail.findpassword;
+package com.gaohuan.mail;
 
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.Email;

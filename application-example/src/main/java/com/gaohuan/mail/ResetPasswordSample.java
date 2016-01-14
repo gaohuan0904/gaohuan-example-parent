@@ -1,4 +1,4 @@
-package com.gaohuan.mail.findpassword;
+package com.gaohuan.mail;
 
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang.RandomStringUtils;
@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Created by gh on 2016/1/14.
  */
-public class FindPasswordSample {
+public class ResetPasswordSample {
 
     public static final Map<String, String> storageMap = new ConcurrentHashMap<>();
 
