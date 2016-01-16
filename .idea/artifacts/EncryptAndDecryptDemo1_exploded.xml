@@ -2,10 +2,10 @@
   <artifact type="exploded-war" name="EncryptAndDecryptDemo1 exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/EncryptAndDecryptDemo1_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="EncryptAndDecryptDemo1/web/Web" />
+      <element id="javaee-facet-resources" facet="encrypt-decrypt-demo1/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="EncryptAndDecryptDemo1" />
+          <element id="module-output" name="encrypt-decrypt-demo1" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.6" />
