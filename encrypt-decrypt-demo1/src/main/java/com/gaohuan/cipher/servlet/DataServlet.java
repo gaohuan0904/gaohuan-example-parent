@@ -19,15 +19,13 @@ public class DataServlet extends HttpServlet {
     private static final long serialVersionUID = 1180105879573302264L;
 
     private static final Logger logger = LoggerFactory.getLogger(DataServlet.class);
-    //密钥
-    private static String key;
-
     private static final String KEY_PARAM = "key";
     /*
         http header 摘要参数名
      */
     private static final String HEAD_MD = "messageDigest";
-
+    //密钥
+    private static String key;
 
     @Override
     public void init() throws ServletException {
@@ -45,7 +43,7 @@ public class DataServlet extends HttpServlet {
             byte[] input = HttpUtils.requestRead(req);
 
             byte[] data = AESCoder.decrypt(input, key);
-            logger.debug("收到请求数据:" + new String(data));
+            logger.debug("收到请求数据:\n" + new String(data));
             //默认回复内容
             byte[] output = "".getBytes();
             //验证成功
