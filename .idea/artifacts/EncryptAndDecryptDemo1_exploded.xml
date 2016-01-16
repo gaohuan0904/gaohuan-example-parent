@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="EncryptAndDecryptDemo1 exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/EncryptAndDecryptDemo1_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="EncryptAndDecryptDemo1/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="EncryptAndDecryptDemo1" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.6" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.2" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.12" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.12" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

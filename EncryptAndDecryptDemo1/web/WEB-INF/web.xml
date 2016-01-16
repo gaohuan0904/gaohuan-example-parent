@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <display-name>DataServlet</display-name>
+    <servlet>
+        <servlet-name>DataServelt</servlet-name>
+        <servlet-class>com.gaohuan.cipher.servlet.DataServlet</servlet-class>
+        <init-param>
+            <param-name>key</param-name>
+            <param-value><![CDATA[XzcSW/UJvGd9hJBX6rkGGGq+vbo3f80YoUMTEZKeSIM=]]></param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DataServelt</servlet-name>
+        <url-pattern>/DataServlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>

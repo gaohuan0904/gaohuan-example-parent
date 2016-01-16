@@ -12,11 +12,11 @@ import java.security.NoSuchAlgorithmException;
 /**
  * AES安全编码组件
  */
-public class AESCoder {
+public abstract class AESCoder {
 
     public static final String KEY_ALGORITHM = "AES";
 
-    public static final String CIPHER_ALGORITHM = "AES/ECB/PKCS5Padding";
+//    public static final String CIPHER_ALGORITHM = "AES/ECB/PKCS5Padding";
 
     public static Key toKey(byte[] key) {
         SecretKey secretKey = new SecretKeySpec(key, KEY_ALGORITHM);
