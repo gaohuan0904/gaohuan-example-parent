@@ -15,10 +15,10 @@ import java.io.IOException;
 /**
  * Created by gh on 2016/1/16.
  */
-public class DataServlet extends HttpServlet {
+public class AESDataServlet extends HttpServlet {
     private static final long serialVersionUID = 1180105879573302264L;
 
-    private static final Logger logger = LoggerFactory.getLogger(DataServlet.class);
+    private static final Logger logger = LoggerFactory.getLogger(AESDataServlet.class);
     private static final String KEY_PARAM = "key";
     /*
         http header 摘要参数名

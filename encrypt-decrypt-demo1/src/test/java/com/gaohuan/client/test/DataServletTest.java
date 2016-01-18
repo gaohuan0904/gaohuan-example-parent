@@ -28,7 +28,7 @@ public class DataServletTest {
 
     private static final String key = "XzcSW/UJvGd9hJBX6rkGGGq+vbo3f80YoUMTEZKeSIM=";
 
-    private static final String requestUrl = "http://localhost:8080/DataServlet";
+    private static final String requestUrl = "http://localhost:8080/AESDataServlet";
 
     public static void main(String[] args) throws InvalidKeyException, BadPaddingException, NoSuchAlgorithmException, IllegalBlockSizeException, NoSuchPaddingException {
 
