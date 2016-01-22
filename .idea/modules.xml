@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/application-example/application-example.iml" filepath="$PROJECT_DIR$/application-example/application-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/encrypt-decrypt-demo1/encrypt-decrypt-demo1.iml" filepath="$PROJECT_DIR$/encrypt-decrypt-demo1/encrypt-decrypt-demo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-example.iml" filepath="$PROJECT_DIR$/my-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-jms/my-jms.iml" filepath="$PROJECT_DIR$/my-jms/my-jms.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiro-oauth2-client/shiro-oauth2-client.iml" filepath="$PROJECT_DIR$/shiro-oauth2-client/shiro-oauth2-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiro-oauth2-server/shiro-oauth2-server.iml" filepath="$PROJECT_DIR$/shiro-oauth2-server/shiro-oauth2-server.iml" />
     </modules>
