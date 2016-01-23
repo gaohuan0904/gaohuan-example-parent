@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>DataServlet</display-name>
+    <servlet>
+        <servlet-name>AESDataServelt</servlet-name>
+        <servlet-class>com.gaohuan.cipher.servlet.AESDataServlet</servlet-class>
+        <init-param>
+            <param-name>key</param-name>
+            <param-value><![CDATA[XzcSW/UJvGd9hJBX6rkGGGq+vbo3f80YoUMTEZKeSIM=]]></param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AESDataServelt</servlet-name>
+        <url-pattern>/AESDataServelt</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RSADataServelt</servlet-name>
+        <servlet-class>com.gaohuan.cipher.servlet.RSADataServlet</servlet-class>
+        <init-param>
+            <param-name>key</param-name>
+            <param-value>
+                <![CDATA[30820154020100300d06092a864886f70d01010105000482013e3082013a0201000241008bdbbb281d701a7f5e117dc1651718b85af76b6ca689c2dacc199401c809980b6aa1e94d95aea29d56eda2c90ad08ac3532319e18991fae5fcb61e5ce488549b02030100010240647efbb9138e1e3c2f67fa29216ebb409d7cf4201a7b1b1d0553cbda8bd6f8fd0b2d78f004ba6f0480afca22df590ede44647f76a334ad3ebed06511ca2fff01022100beb1f51cce3333ca24b3e1317db5cb13804b4a8e646a84f92e2d7ce41544e8e1022100bbc0f687e6ac24713760a45fdae2b3620c0436984ce839857f5db51870f800fb022100bc66fba14b04015dece71f4d134341f0f166f1b13efa9287d19cb5706ea71761022066262dfaf27d65b65332b93b8d9319959684144ff847c043e96fca3f69f704510220407b80b9031069eb03cd6aca8262e0938cb7df2b4676e8d092ae85dd5490a89b]]></param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RSADataServelt</servlet-name>
+        <url-pattern>/RSADataServelt</url-pattern>
+    </servlet-mapping>
+
+</web-app>
