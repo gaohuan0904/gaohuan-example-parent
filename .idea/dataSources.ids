@@ -7,6 +7,7 @@
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
     <schema name="" catalog="shiro_oauth2"/>
+    <schema name="" catalog="test"/>
     <table name="oauth2_client" schema="" catalog="shiro_oauth2" type="TABLE">
       <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
       <column name="client_name" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
@@ -22,6 +23,15 @@
       <column name="salt" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
       <index name="idx_oauth2_user_username" unique="true" columns="username"/>
+    </table>
+    <table name="user" schema="" catalog="test" type="TABLE">
+      <column name="username" sqlType="VARCHAR" precision="16" scale="0" nullable="true" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" remarks="ZW1haWw="/>
+      <column name="password" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12"/>
+      <column name="create_time" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="usercol" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
     </table>
   </data-source>
 </component>

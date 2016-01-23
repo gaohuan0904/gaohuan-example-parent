@@ -20,17 +20,9 @@ public class WorkerThread extends Thread {
     @Override
     public void run() {
         while (true) {
-<<<<<<< HEAD
             Request request = channel.takeRequest();
             request.execute();
-=======
-            LOGGER.debug("WorkerThread ready takeRequest..................");
-//            Request request = channel.takeRequest();
-            Request request = channel.takeRequestOutQueue();
-            request.execute();
-            LOGGER.debug("WorkerThread excute takeRequest!");
 
->>>>>>> ae399a8f4c2fadcc130ad4011368927b520d639c
         }
 
     }
