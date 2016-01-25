@@ -91,8 +91,8 @@ public class Channel {
         while (count <= 0) {
             LOGGER.debug("takeRequest wait()");
             try {
+              wait();
 
-                wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
