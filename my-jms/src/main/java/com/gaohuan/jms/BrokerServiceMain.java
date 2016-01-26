@@ -1,4 +1,4 @@
-package com.gaohuan.jms.chat01;
+package com.gaohuan.jms;
 
 import org.apache.activemq.broker.BrokerService;
 
