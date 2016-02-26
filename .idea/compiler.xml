@@ -36,7 +36,7 @@
         <module name="application-example" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.7">
+    <bytecodeTargetLevel target="1.8">
       <module name="application-example" target="1.7" />
       <module name="encrypt-decrypt-demo1" target="1.5" />
       <module name="my-jms" target="1.5" />
