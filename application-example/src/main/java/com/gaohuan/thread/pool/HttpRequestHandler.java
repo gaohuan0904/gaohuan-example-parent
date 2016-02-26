@@ -70,7 +70,7 @@ public class HttpRequestHandler extends Job {
         if (closeables != null) {
             for (Closeable closeable : closeables) {
                 try {
-                    if(closeable!=null){
+                    if (closeable != null) {
                         closeable.close();
                     }
                 } catch (IOException e) {

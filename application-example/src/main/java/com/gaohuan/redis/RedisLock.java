@@ -8,7 +8,7 @@ import redis.clients.jedis.Transaction;
 import java.util.Random;
 
 /**
- *跨jvm的锁实现
+ * 跨jvm的锁实现
  */
 public class RedisLock {
     /**

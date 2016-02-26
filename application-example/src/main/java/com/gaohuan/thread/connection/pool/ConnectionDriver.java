@@ -24,6 +24,7 @@ public class ConnectionDriver {
 
     /**
      * 创建一个connection代理，在commit时休眠100毫秒
+     *
      * @return
      */
     public static final Connection createConnection() {

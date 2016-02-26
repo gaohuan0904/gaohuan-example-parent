@@ -18,7 +18,7 @@ public class ThreadPoolTest {
         }
 
         Random r = new Random();
-        for (; threadPool.getJobSize() > 0 ; ) {
+        for (; threadPool.getJobSize() > 0; ) {
             //空循环 ，直到job执行完
             Thread.sleep(1000, r.nextInt(500));
         }

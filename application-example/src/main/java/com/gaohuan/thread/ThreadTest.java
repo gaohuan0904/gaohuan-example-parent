@@ -40,6 +40,6 @@ public class ThreadTest {
         System.out.println("thread1");
         thread1.start();
         thread1.interrupt();
-        System.out.println("thread1.isInterrupted():"+thread1.isInterrupted());
+        System.out.println("thread1.isInterrupted():" + thread1.isInterrupted());
     }
 }

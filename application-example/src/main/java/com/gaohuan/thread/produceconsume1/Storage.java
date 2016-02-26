@@ -50,7 +50,7 @@ public class Storage {
         synchronized (list) {
             //仓库数量不足
             while (list.size() < num) {
-                System.out.println("[要消费的数量]:"+num +"\t [库存数量]:"+list.size()+"\t 暂时不能执行消费任务");
+                System.out.println("[要消费的数量]:" + num + "\t [库存数量]:" + list.size() + "\t 暂时不能执行消费任务");
                 try {
                     list.wait();
                 } catch (InterruptedException e) {
@@ -63,7 +63,7 @@ public class Storage {
                 list.remove();
             }
 
-            System.out.println("[已经消费产品数]:"+num +"\t [现存储数量]:"+list.size());
+            System.out.println("[已经消费产品数]:" + num + "\t [现存储数量]:" + list.size());
             list.notifyAll();
         }
 
