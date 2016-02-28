@@ -14,9 +14,9 @@ public class JedisUtils {
 
     }
 
-    public static synchronized Jedis createJedis(){
+    public static synchronized Jedis createJedis() {
 
-        if(pool==null){
+        if (pool == null) {
             // 建立连接池配置参数
             JedisPoolConfig config = new JedisPoolConfig();
             // 设置最大连接数
@@ -32,7 +32,7 @@ public class JedisUtils {
         return pool.getResource();
     }
 
-    public static void returnResource(Jedis jedis){
+    public static void returnResource(Jedis jedis) {
         pool.returnResource(jedis);
     }
 

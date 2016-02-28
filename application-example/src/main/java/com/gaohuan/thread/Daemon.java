@@ -7,12 +7,12 @@ public class Daemon {
 
 
     public static void main(String[] args) {
-      Thread thread= new Thread(new DaemonRunner(),"daemonRunner");
+        Thread thread = new Thread(new DaemonRunner(), "daemonRunner");
         thread.setDaemon(true);
         thread.start();
     }
 
-    static class DaemonRunner implements Runnable{
+    static class DaemonRunner implements Runnable {
 
         @Override
         public void run() {

@@ -11,8 +11,8 @@ public enum Enum {
         this.i = i;
     }
 
-    @Override
-    public String toString() {
-        return String.valueOf(i);
-    }
+//    @Override
+//    public String toString() {
+//        return String.valueOf(i);
+//    }
 }

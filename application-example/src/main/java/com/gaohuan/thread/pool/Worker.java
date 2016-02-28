@@ -48,7 +48,7 @@ public class Worker implements Runnable {
         running = false;
     }
 
-    public boolean isShutdown(){
+    public boolean isShutdown() {
         return true;
     }
 }

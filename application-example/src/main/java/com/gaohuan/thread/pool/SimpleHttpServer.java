@@ -40,7 +40,7 @@ public class SimpleHttpServer {
     }
 
     public static void main(String[] args) throws IOException {
-        System.out.println("服务器启动---端口["+port+"]");
+        System.out.println("服务器启动---端口[" + port + "]");
         SimpleHttpServer.start();
     }
 

@@ -9,13 +9,13 @@ public class StorageTest {
         Storage storage = new Storage();
 
         //生产者对象
-        Producer p1= new Producer(storage);
-        Producer p2= new Producer(storage);
-        Producer p3= new Producer(storage);
-        Producer p4= new Producer(storage);
-        Producer p5= new Producer(storage);
-        Producer p6= new Producer(storage);
-        Producer p7= new Producer(storage);
+        Producer p1 = new Producer(storage);
+        Producer p2 = new Producer(storage);
+        Producer p3 = new Producer(storage);
+        Producer p4 = new Producer(storage);
+        Producer p5 = new Producer(storage);
+        Producer p6 = new Producer(storage);
+        Producer p7 = new Producer(storage);
 
         //消费者对象
         Consumer c1 = new Consumer(storage);

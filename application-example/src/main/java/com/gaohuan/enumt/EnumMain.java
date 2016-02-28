@@ -7,6 +7,8 @@ public class EnumMain {
 
     public static void main(String[] args) {
         System.out.println( Enum.ONE.toString());
+        Enum[] ena = Enum.values();
+        System.out.println(ena[0]);
 
     }
 }
