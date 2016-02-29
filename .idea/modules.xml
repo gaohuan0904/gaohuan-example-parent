@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/application-example/application-example.iml" filepath="$PROJECT_DIR$/application-example/application-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/gaohuan-example.iml" filepath="$PROJECT_DIR$/gaohuan-example.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gh-jms/my-jms.iml" filepath="$PROJECT_DIR$/gh-jms/my-jms.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiro-oauth2-client/shiro-oauth2-client.iml" filepath="$PROJECT_DIR$/shiro-oauth2-client/shiro-oauth2-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiro-oauth2-server/shiro-oauth2-server.iml" filepath="$PROJECT_DIR$/shiro-oauth2-server/shiro-oauth2-server.iml" />
     </modules>
