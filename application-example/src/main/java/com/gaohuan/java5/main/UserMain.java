@@ -1,9 +1,9 @@
-package ibatortest.generated.flat.java5.main;
+package com.gaohuan.java5.main;
 
-import ibatortest.generated.flat.java5.mapper.UserMapper;
-import ibatortest.generated.flat.java5.model.User;
-import ibatortest.generated.flat.java5.model.UserExample;
-import ibatortest.generated.flat.java5.util.SqlSessionFactoryUtil;
+import com.gaohuan.java5.mapper.UserMapper;
+import com.gaohuan.java5.model.User;
+import com.gaohuan.java5.model.UserExample;
+import com.gaohuan.java5.util.SqlSessionFactoryUtil;
 import org.apache.ibatis.session.SqlSession;
 
 import java.sql.SQLException;

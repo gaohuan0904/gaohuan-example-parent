@@ -1,7 +1,7 @@
-package ibatortest.generated.flat.java5.mapper;
+package com.gaohuan.java5.mapper;
 
-import ibatortest.generated.flat.java5.model.User;
-import ibatortest.generated.flat.java5.model.UserExample;
+import com.gaohuan.java5.model.User;
+import com.gaohuan.java5.model.UserExample;
 
 public interface UserMapper {
     /**

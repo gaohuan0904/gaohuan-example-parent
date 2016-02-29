@@ -1,4 +1,4 @@
-package ibatortest.generated.flat.java5.model;
+package com.gaohuan.java5.model;
 
 import java.util.ArrayList;
 import java.util.Date;

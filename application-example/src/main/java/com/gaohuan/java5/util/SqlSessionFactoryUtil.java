@@ -1,4 +1,4 @@
-package ibatortest.generated.flat.java5.util;
+package com.gaohuan.java5.util;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
