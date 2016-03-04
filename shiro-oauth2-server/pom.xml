@@ -10,7 +10,7 @@
     <packaging>war</packaging>
 
     <parent>
-        <groupId>com.gaohuan.example</groupId>
+        <groupId>com.gaohuan.redisUtils</groupId>
         <artifactId>gaohaun-exmpale-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>

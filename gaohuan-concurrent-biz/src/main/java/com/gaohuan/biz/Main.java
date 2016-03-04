@@ -19,9 +19,11 @@ public class Main {
         user.setName("gaohuan");
         userService.save(user);
         */
-        Example example = (Example) context.getBean("example");
-        example.addLink("高欢", "www.baidu.com");
-        System.out.println("成功");
+        RedisUtils redisUtils = (RedisUtils) context.getBean("redisExample");
+        redisUtils.test();
+        System.out.println("-------------运行成功---------------");
         System.exit(1);
+
+
     }
 }
