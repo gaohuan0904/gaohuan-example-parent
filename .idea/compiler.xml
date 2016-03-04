@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="EncryptAndDecryptDemo1" />
+        <module name="my-jms" />
         <module name="shiro-oauth2-client" />
         <module name="shiro-oauth2-server" />
       </profile>

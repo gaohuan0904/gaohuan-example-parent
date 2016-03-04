@@ -2,7 +2,7 @@
   <artifact type="jar" name="application-example:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/application_example_jar</output-path>
     <root id="archive" name="application-example.jar">
-      <element id="module-output" name="application-example" />
+      <element id="module-output" name="gaohuan-application" />
       <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.6" />
       <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />
       <element id="library" level="project" name="Maven: commons-io:commons-io:2.2" />

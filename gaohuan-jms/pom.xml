@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.gaohuan.jms</groupId>
-    <artifactId>my-jms</artifactId>
+    <artifactId>gaohuan-jms</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
