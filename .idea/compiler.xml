@@ -49,6 +49,7 @@
       <module name="gaohuan-application" target="1.7" />
       <module name="gaohuan-example" target="1.5" />
       <module name="gaohuan-example-parent" target="1.5" />
+      <module name="gaohuan-exmple-parent" target="1.5" />
       <module name="gaohuan-jms" target="1.5" />
       <module name="gaohuan-parent" target="1.5" />
       <module name="my-jms" target="1.5" />
