@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/gaohuan-application/gaohuan-application.iml" filepath="$PROJECT_DIR$/gaohuan-application/gaohuan-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gaohuan-concurrent-biz/gaohuan-concurrent-biz.iml" filepath="$PROJECT_DIR$/gaohuan-concurrent-biz/gaohuan-concurrent-biz.iml" />
       <module fileurl="file://$PROJECT_DIR$/gaohuan-exmple-parent.iml" filepath="$PROJECT_DIR$/gaohuan-exmple-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/gaohuan-jms/gaohuan-jms.iml" filepath="$PROJECT_DIR$/gaohuan-jms/gaohuan-jms.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiro-oauth2-client/shiro-oauth2-client.iml" filepath="$PROJECT_DIR$/shiro-oauth2-client/shiro-oauth2-client.iml" />

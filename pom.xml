@@ -19,6 +19,7 @@
         <module>gaohuan-jms</module>
         <module>shiro-oauth2-client</module>
         <module>shiro-oauth2-server</module>
+        <module>gaohuan-concurrent-biz</module>
     </modules>
 
 </project>

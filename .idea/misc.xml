@@ -10,14 +10,10 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/shiro-oauth2-server/pom.xml" />
-        <option value="$PROJECT_DIR$/shiro-oauth2-client/pom.xml" />
         <option value="$PROJECT_DIR$/application-example/pom.xml" />
         <option value="$PROJECT_DIR$/EncryptAndDecryptDemo1/pom.xml" />
         <option value="$PROJECT_DIR$/my-jms/pom.xml" />
-        <option value="$PROJECT_DIR$/gaohuan-jms/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/gaohuan-application/pom.xml" />
       </list>
     </option>
   </component>

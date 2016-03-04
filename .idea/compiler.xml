@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="EncryptAndDecryptDemo1" />
+        <module name="gaohuan-concurrent-biz" />
         <module name="gaohuan-jms" />
         <module name="my-jms" />
         <module name="shiro-oauth2-client" />
@@ -40,21 +41,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="gaohuan-application" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="application-example" target="1.7" />
-      <module name="encrypt-decrypt-demo1" target="1.5" />
-      <module name="gaohuan-application" target="1.7" />
-      <module name="gaohuan-example" target="1.5" />
-      <module name="gaohuan-example-parent" target="1.5" />
-      <module name="gaohuan-exmple-parent" target="1.5" />
-      <module name="gaohuan-jms" target="1.5" />
-      <module name="gaohuan-parent" target="1.5" />
-      <module name="my-jms" target="1.5" />
-      <module name="shiro-oauth2-client" target="1.5" />
-      <module name="shiro-oauth2-server" target="1.5" />
+      <module name="gaohuan-application" target="1.8" />
+      <module name="gaohuan-concurrent-biz" target="1.8" />
+      <module name="gaohuan-exmple-parent" target="1.8" />
+      <module name="gaohuan-jms" target="1.8" />
+      <module name="shiro-oauth2-client" target="1.8" />
+      <module name="shiro-oauth2-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
