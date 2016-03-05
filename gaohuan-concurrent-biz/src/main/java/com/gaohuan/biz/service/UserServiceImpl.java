@@ -19,4 +19,14 @@ public class UserServiceImpl implements UserService {
     public User save(User user) {
         return userRepository.save(user);
     }
+
+    /**
+     * 根据姓名查询用户信息
+     *
+     * @param username
+     * @return
+     */
+    public User findByUsername(String username) {
+        return userRepository.findByUsername(username);
+    }
 }

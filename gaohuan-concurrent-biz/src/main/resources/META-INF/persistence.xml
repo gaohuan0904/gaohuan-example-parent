@@ -6,7 +6,7 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 
     <!--事务类型：local的还是global(JTA)的事务 -->
     <persistence-unit name="newPersistenceUnit" transaction-type="RESOURCE_LOCAL">
-        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <properties>
             <!--配置Hibernate方言 -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
@@ -15,7 +15,7 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
             <!--配置数据库用户名 -->
             <property name="hibernate.connection.username" value="root"/>
             <!--配置数据库密码 -->
-            <property name="hibernate.connection.password" value="root"/>
+            <property name="hibernate.connection.password" value="password"/>
             <!--配置数据库url -->
             <property name="hibernate.connection.url"
                       value="jdbc:mysql://localhost:3306/concurrentBiz?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull"/>

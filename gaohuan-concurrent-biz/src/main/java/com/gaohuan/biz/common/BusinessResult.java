@@ -43,4 +43,12 @@ public class BusinessResult<T> {
     public void setResult(T result) {
         this.result = result;
     }
+
+    @Override
+    public String toString() {
+        return "BusinessResult{" +
+                "success=" + success +
+                ", message='" + message + '\'' +
+                '}';
+    }
 }
