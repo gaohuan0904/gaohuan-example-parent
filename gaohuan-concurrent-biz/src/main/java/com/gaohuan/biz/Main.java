@@ -43,7 +43,7 @@ public class Main {
 
 
         //测试1
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10; i++) {
             poolTaskExecutor.execute(new Runnable() {
                 @Override
                 public void run() {
@@ -62,18 +62,6 @@ public class Main {
                 public void run() {
                     for (int j = 0; j < 2; j++) {
                         userBusiness.signIn(null);
-                    }
-                }
-            });
-        }
-
-        for (int i = 0; i < 2; i++) {
-            poolTaskExecutor.execute(new Runnable() {
-                @Override
-                public void run() {
-                    for (int j = 0; j < 10; j++) {
-                        User user = new User("石萌-" + j, 25);
-                        userBusiness.signIn(user);
                     }
                 }
             });
