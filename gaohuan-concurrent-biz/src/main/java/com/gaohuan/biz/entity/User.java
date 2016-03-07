@@ -1,19 +1,38 @@
 package com.gaohuan.biz.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Date;
 
 /**
  * Created by gh on 2016/3/4 0004.
  */
 @Entity
+
 public class User {
     @Id
     @GeneratedValue
     private Integer id;
+
     private String name;
+
     private Integer age;
+
+    @Column(name = "create_date", nullable = false)
+    private Date createDate;
+
+    @Column(name = "modify_date", nullable = false)
+    private Date modifyDate;
+
+    @Version
+    private int version = 0;
+
+    public User() {
+    }
+
+    public User(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
 
     public Integer getId() {
         return id;
@@ -46,5 +65,15 @@ public class User {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @PrePersist
+    void prePersist() {
+        createDate = new Date();
+    }
+
+    @PreUpdate
+    void preUpdate() {
+        modifyDate = new Date();
     }
 }
