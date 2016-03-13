@@ -4,6 +4,8 @@ import com.gaohuan.biz.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
+import java.util.List;
+
 /**
  * Created by gh on 2016/3/4 0004.
  */
@@ -16,4 +18,16 @@ public interface UserRepository extends JpaRepository<User, Integer> {
      */
     @Query("select u from User  u where  u.name=?1")
     public User findByUsername(String username);
+
+    /**
+     * 根据emailAddress查询
+     *
+     * @param emailAddress
+     * @return
+     */
+    @Query(value = "SELECT * FROM USER WHERE EMAIL_ADDRESS=?1 ", nativeQuery = true)
+    public List<User> findByEmailAddress(String emailAddress);
+
+    @Query("select  u from User  u where  u.name like %?1")
+    List<User> findByNameEndsWith(String name);
 }
