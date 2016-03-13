@@ -41,34 +41,34 @@ public class UserBusinessImpl implements UserBusiness {
         long start = System.currentTimeMillis();
         BusinessResult<String> businessResult = new BusinessResult<>();
         try {
-            if (user == null || StringUtils.isBlank(user.getName())) {
+            if (user == null || StringUtils.isBlank(user.getFirstname())) {
                 throw new BusinessException("注册参数不能为空!");
             }
             //通过缓存验证是否注册过
             SetOperations setOperations = redisTemplate.opsForSet();
-            if (setOperations.isMember(RedisConstant.SIGNIN_SUCCESSFUL_USERNAME_KEY, user.getName())) {
+            if (setOperations.isMember(RedisConstant.SIGNIN_SUCCESSFUL_USERNAME_KEY, user.getFirstname())) {
                 throw new BusinessException("【reids-1-check】-注册用户已存在!");
             }
-            String lockKey = RedisConstant.LOCK_SIGNIN_DUPLICATE_USERNAME_KEY + user.getName();
+            String lockKey = RedisConstant.LOCK_SIGNIN_DUPLICATE_USERNAME_KEY + user.getFirstname();
             try {
 
                 if (!redisLock.lock(lockKey)) {
                     throw new BusinessException("【redis】-获取锁失败!");
                 }
                 //获取到锁后再执行一次检查
-                if (setOperations.isMember(RedisConstant.SIGNIN_SUCCESSFUL_USERNAME_KEY, user.getName())) {
+                if (setOperations.isMember(RedisConstant.SIGNIN_SUCCESSFUL_USERNAME_KEY, user.getFirstname())) {
                     throw new BusinessException("【reids-2-check】-注册用户已存在!");
                 }
                 //通过数据库验证是否注册过
-                User findUser = userService.findByUsername(user.getName());
+                User findUser = userService.findByUsername(user.getFirstname());
                 if (findUser != null) {
                     //从数据存中查询到用户存在，说明缓存没起作用，更新缓存。
-                    setOperations.add(RedisConstant.SIGNIN_SUCCESSFUL_USERNAME_KEY, user.getName());
+                    setOperations.add(RedisConstant.SIGNIN_SUCCESSFUL_USERNAME_KEY, user.getFirstname());
                     throw new BusinessException("【db】-注册用户已存在!");
                 }
                 userService.save(user);
                 //保存成功，加入缓存
-                setOperations.add(RedisConstant.SIGNIN_SUCCESSFUL_USERNAME_KEY, user.getName());
+                setOperations.add(RedisConstant.SIGNIN_SUCCESSFUL_USERNAME_KEY, user.getFirstname());
                 redisLock.unlock(lockKey);
             } catch (Exception e) {
                 redisLock.unlock(lockKey);

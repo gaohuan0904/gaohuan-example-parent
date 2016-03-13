@@ -44,5 +44,11 @@ public class JpaTest {
         Assert.assertNotNull(list);
     }
 
+    @Test
+    public void test4() {
+
+        List<User> list = userRepository.findByLastname("huan");
+        System.out.println(list.size());
+    }
 
 }

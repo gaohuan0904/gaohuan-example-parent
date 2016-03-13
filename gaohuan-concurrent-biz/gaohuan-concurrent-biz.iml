@@ -7,7 +7,7 @@
         <setting name="provider-name" value="" />
         <datasource-mapping>
           <factory-entry name="jpa_test" />
-          <factory-entry name="newPersistenceUnit" value="dataSource" />
+          <factory-entry name="newPersistenceUnit" value="d924ed81-d361-4826-96d1-caca0225333f" />
           <factory-entry name="noname-applicationContext.xml@298" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />

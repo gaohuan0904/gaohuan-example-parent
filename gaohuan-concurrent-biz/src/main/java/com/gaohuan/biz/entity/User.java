@@ -14,10 +14,9 @@ public class User implements Serializable {
     @GeneratedValue
     private Integer id;
 
-    private String name;
+    private String firstname;
 
-    @Column(name = "last_name")
-    private String lastName;
+    private String lastname;
 
     private Integer age;
 
@@ -37,8 +36,8 @@ public class User implements Serializable {
     }
 
 
-    public User(String name, Integer age) {
-        this.name = name;
+    public User(String firstname, Integer age) {
+        this.firstname = firstname;
         this.age = age;
     }
 
@@ -50,12 +49,12 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstname(String name) {
+        this.firstname = name;
     }
 
     public Integer getAge() {
@@ -66,12 +65,12 @@ public class User implements Serializable {
         this.age = age;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLastname() {
+        return lastname;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastname(String lastName) {
+        this.lastname = lastName;
     }
 
     public String getEmailAddress() {
@@ -120,7 +119,7 @@ public class User implements Serializable {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", name='" + firstname + '\'' +
                 ", age=" + age +
                 '}';
     }

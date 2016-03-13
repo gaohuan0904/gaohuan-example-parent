@@ -3,6 +3,7 @@ package com.gaohuan.biz.dao;
 import com.gaohuan.biz.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
@@ -16,7 +17,7 @@ public interface UserRepository extends JpaRepository<User, Integer> {
      * @param username
      * @return
      */
-    @Query("select u from User  u where  u.name=?1")
+    @Query("select u from User  u where  u.firstname=?1")
     public User findByUsername(String username);
 
     /**
@@ -28,6 +29,25 @@ public interface UserRepository extends JpaRepository<User, Integer> {
     @Query(value = "SELECT * FROM USER WHERE EMAIL_ADDRESS=?1 ", nativeQuery = true)
     public List<User> findByEmailAddress(String emailAddress);
 
-    @Query("select  u from User  u where  u.name like %?1")
+    /**
+     * 模糊查询
+     *
+     * @param name
+     * @return
+     */
+    @Query("select  u from User  u where  u.firstname like %?1")
     List<User> findByNameEndsWith(String name);
+
+    /**
+     * 查询
+     *
+     * @param lastname
+     * @param firstname
+     * @return
+     */
+    @Query("select u from User u where u.firstname =:firstname or u.lastname = :lastname")
+    List<User> findByLastnameOrFirstname(@Param("lastname") String lastname, @Param("firstname") String firstname);
+
+    @Query("select u from #{#entityName} u where u.lastname=?1")
+    List<User> findByLastname(String lastname);
 }

@@ -8,12 +8,10 @@
          http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-
-    <!--实体工厂-->
+    <!--组件扫描-->
     <context:component-scan base-package="com.gaohuan.biz"/>
 
-
-    <!-- log4jdbc -->
+    <!-- log4jdbc sql -->
     <bean id="log4jdbcInterceptor" class="net.sf.log4jdbc.DataSourceSpyInterceptor"/>
     <bean id="dataSourceLog4jdbcAutoProxyCreator"
           class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
@@ -28,7 +26,6 @@
             </list>
         </property>
     </bean>
-
 
     <!--数据源配置-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
@@ -57,6 +54,7 @@
         <property name="filters" value="log4j"/>
         -->
     </bean>
+    <!--druid 过滤组件-->
     <!--
     <bean id="stat-filter" class="com.alibaba.druid.filter.stat.StatFilter">
         <property name="slowSqlMillis" value="3000" />
@@ -68,7 +66,9 @@
         <property name="statementParameterSetLogEnabled" value="true"/>
     </bean>
      -->
-    <bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" p:showSql="false"
+
+    <bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"
+          p:showSql="false"
           p:generateDdl="false"/>
 
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
@@ -100,6 +100,7 @@
             </props>
         </property>
     </bean>
+
     <!--事物管理-->
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory"/>

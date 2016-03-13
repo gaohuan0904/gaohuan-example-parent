@@ -16,25 +16,25 @@
       <column id="4" parent="2" name="age">
         <data-type>int(11)</data-type>
       </column>
-      <column id="5" parent="2" name="name">
-        <data-type>varchar(255)</data-type>
-      </column>
-      <column id="6" parent="2" name="create_date">
+      <column id="5" parent="2" name="create_date">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="7" parent="2" name="modify_date">
+      <column id="6" parent="2" name="modify_date">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="8" parent="2" name="version">
+      <column id="7" parent="2" name="version">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="9" parent="2" name="email_address">
+      <column id="8" parent="2" name="email_address">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="10" parent="2" name="last_name">
+      <column id="9" parent="2" name="firstname">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="10" parent="2" name="lastname">
         <data-type>varchar(255)</data-type>
       </column>
       <key id="11" parent="2" name="PRIMARY">
