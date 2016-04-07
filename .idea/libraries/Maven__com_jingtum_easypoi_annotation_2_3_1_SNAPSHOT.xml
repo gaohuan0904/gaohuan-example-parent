@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.jingtum:easypoi-annotation:2.3.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jingtum/easypoi-annotation/2.3.1-SNAPSHOT/easypoi-annotation-2.3.1-20160227.031436-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jingtum/easypoi-annotation/2.3.1-SNAPSHOT/easypoi-annotation-2.3.1-20160227.031436-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jingtum/easypoi-annotation/2.3.1-SNAPSHOT/easypoi-annotation-2.3.1-20160227.031436-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

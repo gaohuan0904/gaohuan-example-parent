@@ -1,10 +1,5 @@
 package com.gaohuan.main;
 
-import java.util.UUID;
-
-import org.apache.commons.codec.digest.DigestUtils;
-import org.apache.commons.lang.RandomStringUtils;
-
 /**
  * Created by gh on 2016/1/22.
  */
@@ -18,6 +13,7 @@ public class MyTest {
     }
 
     public static void main(String[] args) {
+        /*
         String targetPath = "http:\\adfa\\adsfa\\adfa\\adfa/1234/1234/1234";
         targetPath = targetPath.replaceAll("\\\\", "/");
         System.out.println(targetPath);
@@ -26,6 +22,13 @@ public class MyTest {
         System.out.println();
         System.out.println(DigestUtils.md5Hex(uuid));
         System.out.println(RandomStringUtils.randomAlphanumeric(6));
+        */
+
+        Object obj = null;
+        System.out.println(obj);
+        obj = (obj == null) ? new Object() : obj;
+        System.out.println(obj);
+
 
     }
 }

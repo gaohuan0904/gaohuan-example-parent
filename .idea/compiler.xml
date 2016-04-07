@@ -23,10 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="EncryptAndDecryptDemo1" />
-        <module name="gaohuan-jms" />
         <module name="my-jms" />
-        <module name="shiro-oauth2-client" />
-        <module name="shiro-oauth2-server" />
       </profile>
       <profile default="false" name="Annotation profile for application-example" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -48,14 +45,35 @@
         <processorPath useClasspath="true" />
         <module name="gaohuan-concurrent-biz" />
       </profile>
+      <profile default="false" name="Annotation profile for shiro-oauth2-server" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="shiro-oauth2-server" />
+      </profile>
+      <profile default="false" name="Annotation profile for shiro-oauth2-client" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="shiro-oauth2-client" />
+      </profile>
+      <profile default="false" name="Annotation profile for gaohuan-jms" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="gaohuan-jms" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="gaohuan-application" target="1.7" />
+      <module name="gaohuan-application" target="1.8" />
       <module name="gaohuan-concurrent-biz" target="1.8" />
-      <module name="gaohuan-exmple-parent" target="1.5" />
-      <module name="gaohuan-jms" target="1.5" />
-      <module name="shiro-oauth2-client" target="1.5" />
-      <module name="shiro-oauth2-server" target="1.5" />
+      <module name="gaohuan-exmple-parent" target="1.8" />
+      <module name="gaohuan-jms" target="1.8" />
+      <module name="shiro-oauth2-client" target="1.8" />
+      <module name="shiro-oauth2-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
