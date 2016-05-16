@@ -1,0 +1,93 @@
+2016-04-28 19:56:31,576 [main][DEBUG]-[com.gaohuan.log.LogUtil.main(LogUtil.java:14)] - test
+2016-04-28 20:00:15,872 [main][DEBUG]-[com.gaohuan.log.LogUtil.main(LogUtil.java:17)] - test
+2016-04-28 20:00:15,887 [main][DEBUG]-[com.gaohuan.log.LogUtil.main(LogUtil.java:18)] - common-test
+2016-04-29 11:27:16,742 [main][ERROR]-[com.gaohuan.log.LogUtil.main(LogUtil.java:17)] - / by zero
+java.lang.ArithmeticException: / by zero
+	at com.gaohuan.log.LogUtil.main(LogUtil.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+2016-05-04 15:20:02,336 [main][DEBUG]-[org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:122)] - CookieSpec selected: default
+2016-05-04 15:20:02,354 [main][DEBUG]-[org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:76)] - Auth cache not set in the context
+2016-05-04 15:20:02,355 [main][DEBUG]-[org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:249)] - Connection request: [route: {}->http://localhost:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2016-05-04 15:20:02,368 [main][DEBUG]-[org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:282)] - Connection leased: [id: 0][route: {}->http://localhost:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2016-05-04 15:20:02,369 [main][DEBUG]-[org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:234)] - Opening connection {}->http://localhost:80
+2016-05-04 15:20:02,383 [main][DEBUG]-[org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:138)] - Connecting to localhost/127.0.0.1:80
+2016-05-04 15:20:02,386 [main][DEBUG]-[org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:145)] - Connection established 127.0.0.1:60555<->127.0.0.1:80
+2016-05-04 15:20:02,386 [main][DEBUG]-[org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:255)] - Executing request GET / HTTP/1.1
+2016-05-04 15:20:02,386 [main][DEBUG]-[org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)] - Target auth state: UNCHALLENGED
+2016-05-04 15:20:02,386 [main][DEBUG]-[org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:266)] - Proxy auth state: UNCHALLENGED
+2016-05-04 15:20:02,388 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:135)] - http-outgoing-0 >> GET / HTTP/1.1
+2016-05-04 15:20:02,388 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:138)] - http-outgoing-0 >> Host: localhost
+2016-05-04 15:20:02,388 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:138)] - http-outgoing-0 >> Connection: Keep-Alive
+2016-05-04 15:20:02,388 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:138)] - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_66)
+2016-05-04 15:20:02,388 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:138)] - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2016-05-04 15:20:02,388 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+2016-05-04 15:20:02,389 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 >> "Host: localhost[\r][\n]"
+2016-05-04 15:20:02,389 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2016-05-04 15:20:02,389 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_66)[\r][\n]"
+2016-05-04 15:20:02,390 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2016-05-04 15:20:02,390 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 >> "[\r][\n]"
+2016-05-04 15:20:02,671 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2016-05-04 15:20:02,671 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "Date: Wed, 04 May 2016 07:20:02 GMT[\r][\n]"
+2016-05-04 15:20:02,671 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "Server: Apache/2.4.18 (Win64) OpenSSL/1.0.2g PHP/7.0.4[\r][\n]"
+2016-05-04 15:20:02,672 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "X-Powered-By: PHP/7.0.4[\r][\n]"
+2016-05-04 15:20:02,672 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "Content-Length: 0[\r][\n]"
+2016-05-04 15:20:02,673 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2016-05-04 15:20:02,673 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "Connection: Keep-Alive[\r][\n]"
+2016-05-04 15:20:02,673 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+2016-05-04 15:20:02,673 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "[\r][\n]"
+2016-05-04 15:20:02,677 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:124)] - http-outgoing-0 << HTTP/1.1 200 OK
+2016-05-04 15:20:02,677 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:127)] - http-outgoing-0 << Date: Wed, 04 May 2016 07:20:02 GMT
+2016-05-04 15:20:02,677 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:127)] - http-outgoing-0 << Server: Apache/2.4.18 (Win64) OpenSSL/1.0.2g PHP/7.0.4
+2016-05-04 15:20:02,677 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:127)] - http-outgoing-0 << X-Powered-By: PHP/7.0.4
+2016-05-04 15:20:02,677 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:127)] - http-outgoing-0 << Content-Length: 0
+2016-05-04 15:20:02,678 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:127)] - http-outgoing-0 << Keep-Alive: timeout=5, max=100
+2016-05-04 15:20:02,678 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:127)] - http-outgoing-0 << Connection: Keep-Alive
+2016-05-04 15:20:02,678 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:127)] - http-outgoing-0 << Content-Type: text/html; charset=UTF-8
+2016-05-04 15:20:02,683 [main][DEBUG]-[org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:284)] - Connection can be kept alive for 5000 MILLISECONDS
+2016-05-04 15:20:02,683 [main][DEBUG]-[org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:314)] - Connection [id: 0][route: {}->http://localhost:80] can be kept alive for 5.0 seconds
+2016-05-04 15:20:02,683 [main][DEBUG]-[org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:320)] - Connection released: [id: 0][route: {}->http://localhost:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2016-05-04 15:20:22,718 [main][DEBUG]-[org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:122)] - CookieSpec selected: default
+2016-05-04 15:20:22,727 [main][DEBUG]-[org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:76)] - Auth cache not set in the context
+2016-05-04 15:20:22,728 [main][DEBUG]-[org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:249)] - Connection request: [route: {}->http://localhost:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2016-05-04 15:20:22,739 [main][DEBUG]-[org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:282)] - Connection leased: [id: 0][route: {}->http://localhost:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2016-05-04 15:20:22,740 [main][DEBUG]-[org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:234)] - Opening connection {}->http://localhost:80
+2016-05-04 15:20:22,746 [main][DEBUG]-[org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:138)] - Connecting to localhost/127.0.0.1:80
+2016-05-04 15:20:22,748 [main][DEBUG]-[org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:145)] - Connection established 127.0.0.1:60575<->127.0.0.1:80
+2016-05-04 15:20:22,749 [main][DEBUG]-[org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:255)] - Executing request GET / HTTP/1.1
+2016-05-04 15:20:22,749 [main][DEBUG]-[org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)] - Target auth state: UNCHALLENGED
+2016-05-04 15:20:22,749 [main][DEBUG]-[org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:266)] - Proxy auth state: UNCHALLENGED
+2016-05-04 15:20:22,751 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:135)] - http-outgoing-0 >> GET / HTTP/1.1
+2016-05-04 15:20:22,751 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:138)] - http-outgoing-0 >> Host: localhost
+2016-05-04 15:20:22,751 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:138)] - http-outgoing-0 >> Connection: Keep-Alive
+2016-05-04 15:20:22,751 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:138)] - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_66)
+2016-05-04 15:20:22,751 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:138)] - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2016-05-04 15:20:22,752 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+2016-05-04 15:20:22,752 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 >> "Host: localhost[\r][\n]"
+2016-05-04 15:20:22,753 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2016-05-04 15:20:22,753 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_66)[\r][\n]"
+2016-05-04 15:20:22,754 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2016-05-04 15:20:22,754 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 >> "[\r][\n]"
+2016-05-04 15:20:22,755 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2016-05-04 15:20:22,755 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "Date: Wed, 04 May 2016 07:20:22 GMT[\r][\n]"
+2016-05-04 15:20:22,756 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "Server: Apache/2.4.18 (Win64) OpenSSL/1.0.2g PHP/7.0.4[\r][\n]"
+2016-05-04 15:20:22,756 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "X-Powered-By: PHP/7.0.4[\r][\n]"
+2016-05-04 15:20:22,756 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "Content-Length: 0[\r][\n]"
+2016-05-04 15:20:22,756 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2016-05-04 15:20:22,756 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "Connection: Keep-Alive[\r][\n]"
+2016-05-04 15:20:22,756 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+2016-05-04 15:20:22,756 [main][DEBUG]-[org.apache.http.impl.conn.Wire.wire(Wire.java:72)] - http-outgoing-0 << "[\r][\n]"
+2016-05-04 15:20:22,758 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:124)] - http-outgoing-0 << HTTP/1.1 200 OK
+2016-05-04 15:20:22,758 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:127)] - http-outgoing-0 << Date: Wed, 04 May 2016 07:20:22 GMT
+2016-05-04 15:20:22,758 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:127)] - http-outgoing-0 << Server: Apache/2.4.18 (Win64) OpenSSL/1.0.2g PHP/7.0.4
+2016-05-04 15:20:22,759 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:127)] - http-outgoing-0 << X-Powered-By: PHP/7.0.4
+2016-05-04 15:20:22,759 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:127)] - http-outgoing-0 << Content-Length: 0
+2016-05-04 15:20:22,759 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:127)] - http-outgoing-0 << Keep-Alive: timeout=5, max=100
+2016-05-04 15:20:22,759 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:127)] - http-outgoing-0 << Connection: Keep-Alive
+2016-05-04 15:20:22,759 [main][DEBUG]-[org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:127)] - http-outgoing-0 << Content-Type: text/html; charset=UTF-8
+2016-05-04 15:20:22,763 [main][DEBUG]-[org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:284)] - Connection can be kept alive for 5000 MILLISECONDS
+2016-05-04 15:20:22,764 [main][DEBUG]-[org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:314)] - Connection [id: 0][route: {}->http://localhost:80] can be kept alive for 5.0 seconds
+2016-05-04 15:20:22,764 [main][DEBUG]-[org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:320)] - Connection released: [id: 0][route: {}->http://localhost:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]

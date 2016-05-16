@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--组件扫描-->
+    <context:component-scan base-package="com.gaohuan.biz"/>
+
+    <!-- log4jdbc sql -->
+    <bean id="log4jdbcInterceptor" class="net.sf.log4jdbc.DataSourceSpyInterceptor"/>
+    <bean id="dataSourceLog4jdbcAutoProxyCreator"
+          class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+        <property name="interceptorNames">
+            <list>
+                <value>log4jdbcInterceptor</value>
+            </list>
+        </property>
+        <property name="beanNames">
+            <list>
+                <value>dataSource</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--数据源配置-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url"
+                  value="jdbc:mysql://localhost:3306/concurrentBiz?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+        <property name="maxActive" value="100"/>
+        <property name="initialSize" value="5"/>
+        <property name="maxWait" value="60000"/>
+        <property name="minIdle" value="2"/>
+        <property name="timeBetweenEvictionRunsMillis" value="3000"/>
+        <property name="minEvictableIdleTimeMillis" value="300000"/>
+        <property name="validationQuery" value="select 1"/>
+        <property name="testWhileIdle" value="true"/>
+        <property name="testOnBorrow" value="true"/>
+        <property name="testOnReturn" value="true"/>
+        <!--
+        <property name="proxyFilters">
+            <list>
+                <ref bean="log-filter"/>
+                <ref bean="stat-filter"/>
+            </list>
+        </property>
+        <property name="filters" value="log4j"/>
+        -->
+    </bean>
+    <!--druid 过滤组件-->
+    <!--
+    <bean id="stat-filter" class="com.alibaba.druid.filter.stat.StatFilter">
+        <property name="slowSqlMillis" value="3000" />
+        <property name="logSlowSql" value="true" />
+        <property name="mergeSql" value="true" />
+    </bean>
+
+    <bean id="log-filter" class="com.alibaba.druid.filter.logging.Log4jFilter">
+        <property name="statementParameterSetLogEnabled" value="true"/>
+    </bean>
+     -->
+
+    <bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"
+          p:showSql="false"
+          p:generateDdl="false"/>
+
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <!--<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean">-->
+        <property name="persistenceUnitName" value="newPersistenceUnit"/>
+        <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan" value="com.gaohuan.biz.entity"/>
+        <property name="jpaVendorAdapter" ref="jpaVendorAdapter"/>
+        <property name="jpaProperties">
+            <props>
+                <prop key="hibernate.max_fetch_depth">3</prop>
+                <!--配置Hibernate方言 -->
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <!--配置数据库驱动 -->
+                <prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>
+                <!--配置数据库用户名 -->
+                <prop key="hibernate.connection.username">root</prop>
+                <!--配置数据库密码 -->
+                <prop key="hibernate.connection.password">root</prop>
+                <!--配置数据库url -->
+                <prop key="hibernate.connection.url">jdbc:mysql://localhost:3306/concurrentBiz?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull</prop>
+                <!--设置外连接抓取树的最大深度 -->
+                <prop key="hibernate.max_fetch_depth">3</prop>
+                <!--自动输出schema创建DDL语句 -->
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.show_sql">false</prop>
+                <prop key="hibernate.format_sql">false</prop>
+                <prop key="javax.persistence.validation.mode">none</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--事物管理-->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
+
+    <jpa:repositories base-package="com.gaohuan.biz.dao"
+                      transaction-manager-ref="transactionManager"
+                      entity-manager-factory-ref="entityManagerFactory"
+                      repository-impl-postfix="Impl"/>
+
+    <!--redis配置-->
+    <bean id="jedisConnFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
+          p:usePool="true"
+          p:hostName="127.0.0.1"
+          p:port="6379"
+    />
+    <!--
+    <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate"
+          p:connectionFactory-rerf="jedisConnFactory"/>
+     -->
+    <bean id="redisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate"
+          p:connectionFactory-ref="jedisConnFactory"/>
+
+</beans>
