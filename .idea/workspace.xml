@@ -4,97 +4,46 @@
     <bookmark url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2-sources.jar!/org/apache/http/impl/auth/AuthSchemeBase.java" description="public Header authenticate(" line="133" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf00b4d3-0f43-444a-af36-f21cdc7c6842" name="Default" comment="新增代码">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/com/gaohuan/biz/Main$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/com/gaohuan/biz/Main$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/com/gaohuan/biz/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/com/gaohuan/biz/business/UserBusiness.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/com/gaohuan/biz/business/UserBusinessImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/com/gaohuan/biz/common/BusinessException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/com/gaohuan/biz/common/BusinessResult.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/com/gaohuan/biz/dao/UserRepository.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/com/gaohuan/biz/entity/User.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/com/gaohuan/biz/service/UserService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/com/gaohuan/biz/service/UserServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/com/gaohuan/biz/utils/RedisConstant.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/com/gaohuan/biz/utils/RedisLock.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/net/sf/log4jdbc/DataSourceSpyInterceptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/test-classes/com/gaohuan/biz/JpaTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/BrokerServiceMain.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat01/Chat.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat01/MetaData.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat01/QBorrower.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat01/QLender.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat01/RequestQueueBrowser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat02/TBorrower.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat02/TLender.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-client/target/classes/com/gaohuan/shiro/oauth2/OAuth2AuthenticationException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-client/target/classes/com/gaohuan/shiro/oauth2/OAuth2AuthenticationFilter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-client/target/classes/com/gaohuan/shiro/oauth2/OAuth2Token.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-client/target/classes/com/gaohuan/shiro/oauth2/Oauth2Realm.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/credentials/RetryLimitHashedCredentialsMatcher.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/dao/ClientDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/dao/ClientDaoImpl$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/dao/ClientDaoImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/dao/UserDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/dao/UserDaoImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/entity/Client.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/entity/User.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/realm/UserRealm.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/ClientService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/ClientServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/OauthService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/OauthServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/PasswordHelper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/UserService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/UserServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/util/Constants.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/util/SpringUtils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/AccessTokenController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/AuthorizeController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/ClientController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/IndexController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/LoginController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/UserController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/UserInfoController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/exception/DefaultExceptionHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpasyncclient_4_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_nio_4_4_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_16.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/cache/CacheElement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/classloader/CustomClassLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/httpclient/HttpClientUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/jwt/JwtUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/log/LogUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/sort/MergeSort1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/sort/MergeSort2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/utils/IOUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/yml/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/yml/Person.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/META-INF/persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gaohuan-concurrent-biz/target/classes/log4j.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-client/target/classes/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-client/target/classes/ehcache/ehcache.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-client/target/classes/log4j.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/ehcache/ehcache.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/log4j.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/resources.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/spring-config-cache.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/spring-config-shiro.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/spring-config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jingtum_easypoi_annotation_2_3_1_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jingtum_easypoi_annotation_2_3_1_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jingtum_jingtum_common_0_0_1_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jingtum_jingtum_common_0_0_1_SNAPSHOT.xml" />
+    <list default="true" id="cf00b4d3-0f43-444a-af36-f21cdc7c6842" name="Default" comment="全部提交&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/BrokerServiceMain.class" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/BrokerServiceMain.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat01/Chat.class" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat01/Chat.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat01/MetaData.class" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat01/MetaData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat01/QBorrower.class" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat01/QBorrower.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat01/QLender.class" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat01/QLender.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat01/RequestQueueBrowser.class" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat01/RequestQueueBrowser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat02/TBorrower.class" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat02/TBorrower.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat02/TLender.class" afterPath="$PROJECT_DIR$/gaohuan-jms/target/classes/com/gaohuan/jms/chat02/TLender.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-client/target/classes/com/gaohuan/shiro/oauth2/OAuth2AuthenticationException.class" afterPath="$PROJECT_DIR$/shiro-oauth2-client/target/classes/com/gaohuan/shiro/oauth2/OAuth2AuthenticationException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-client/target/classes/com/gaohuan/shiro/oauth2/OAuth2AuthenticationFilter.class" afterPath="$PROJECT_DIR$/shiro-oauth2-client/target/classes/com/gaohuan/shiro/oauth2/OAuth2AuthenticationFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-client/target/classes/com/gaohuan/shiro/oauth2/OAuth2Token.class" afterPath="$PROJECT_DIR$/shiro-oauth2-client/target/classes/com/gaohuan/shiro/oauth2/OAuth2Token.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-client/target/classes/com/gaohuan/shiro/oauth2/Oauth2Realm.class" afterPath="$PROJECT_DIR$/shiro-oauth2-client/target/classes/com/gaohuan/shiro/oauth2/Oauth2Realm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/credentials/RetryLimitHashedCredentialsMatcher.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/credentials/RetryLimitHashedCredentialsMatcher.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/dao/ClientDao.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/dao/ClientDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/dao/ClientDaoImpl$1.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/dao/ClientDaoImpl$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/dao/ClientDaoImpl.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/dao/ClientDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/dao/UserDao.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/dao/UserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/dao/UserDaoImpl.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/dao/UserDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/entity/Client.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/entity/Client.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/entity/User.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/entity/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/realm/UserRealm.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/realm/UserRealm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/ClientService.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/ClientService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/ClientServiceImpl.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/ClientServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/OauthService.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/OauthService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/OauthServiceImpl.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/OauthServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/PasswordHelper.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/PasswordHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/UserService.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/UserServiceImpl.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/service/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/util/Constants.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/util/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/util/SpringUtils.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/util/SpringUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/AccessTokenController.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/AccessTokenController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/AuthorizeController.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/AuthorizeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/ClientController.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/ClientController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/IndexController.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/IndexController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/LoginController.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/LoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/UserController.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/UserInfoController.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/UserInfoController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/exception/DefaultExceptionHandler.class" afterPath="$PROJECT_DIR$/shiro-oauth2-server/target/classes/com/gaohuan/shiro/web/exception/DefaultExceptionHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gaohuan-application/gaohuan-application.iml" afterPath="$PROJECT_DIR$/gaohuan-application/gaohuan-application.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gaohuan-application/pom.xml" afterPath="$PROJECT_DIR$/gaohuan-application/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/main/MyTest.java" afterPath="$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/main/MyTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gaohuan-application/src/main/resources/log4j.xml" afterPath="$PROJECT_DIR$/gaohuan-application/src/main/resources/log4j.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="gaohuan-application/target/" />
@@ -145,7 +94,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gaohuan-application/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.961538">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="218" column="46" selection-start-line="218" selection-start-column="46" selection-end-line="218" selection-end-column="46" />
               <folding />
             </state>
@@ -162,10 +111,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Person.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/yml/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35">
+            <state vertical-scroll-proportion="0.0">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
@@ -176,7 +125,7 @@
         <entry file="file://$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/jwt/JwtUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -184,10 +133,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5714286">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.692308">
+            <state vertical-scroll-proportion="0.0">
               <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
               <folding />
             </state>
@@ -205,6 +164,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="gaohuan0904 &lt;gaohuan0904@163.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -260,6 +224,8 @@
         <option value="$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/httpclient/HttpClientUtils.java" />
         <option value="$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/jwt/JwtUtils.java" />
         <option value="$PROJECT_DIR$/gaohuan-application/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -350,6 +316,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="gaohuan-application">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="gaohuan-application">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -378,130 +368,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-concurrent-biz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-example-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-concurrent-biz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-example-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-example-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-example-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-example-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan-application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaohuan" />
+              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -522,31 +395,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="gaohuan-application">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="gaohuan-application">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -559,6 +407,22 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.28151262" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="204" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="239" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="241" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1145" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="219" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="238" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="241" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1144" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1185,7 +1049,8 @@
       <workItem from="1462499865067" duration="1959000" />
       <workItem from="1462527652240" duration="845000" />
       <workItem from="1462931730339" duration="3641000" />
-      <workItem from="1463365323570" duration="1236000" />
+      <workItem from="1463365323570" duration="2712000" />
+      <workItem from="1463368222543" duration="512000" />
     </task>
     <task id="LOCAL-00001" summary="结构调整">
       <created>1457061812220</created>
@@ -1265,7 +1130,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460026834046</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="指定忽略文件">
+      <created>1463368485808</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1463368485808</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1301,7 +1172,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126892000" />
+    <option name="totallyTimeSpent" value="128880000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1313,7 +1184,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1322,10 +1193,8 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41591927" sideWeight="0.50213677" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.59668803" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.51681614" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40470853" sideWeight="0.49786323" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16132478" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.69058293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -1338,14 +1207,16 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47757846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47757846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40470853" sideWeight="0.49786323" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1368,7 +1239,8 @@
     <MESSAGE value="SpringJpa+Jpa+hibernate" />
     <MESSAGE value="new" />
     <MESSAGE value="新增代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增代码" />
+    <MESSAGE value="指定忽略文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="指定忽略文件" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1382,6 +1254,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2-sources.jar!/org/apache/http/client/methods/CloseableHttpResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27874565">
@@ -1674,23 +1554,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34371257">
           <caret line="749" column="6" selection-start-line="749" selection-start-column="6" selection-end-line="749" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/jwt/JwtUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.692308">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
           <folding />
         </state>
@@ -1698,7 +1567,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gaohuan-application/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.961538">
+        <state vertical-scroll-proportion="0.0">
           <caret line="218" column="46" selection-start-line="218" selection-start-column="46" selection-end-line="218" selection-end-column="46" />
           <folding />
         </state>
@@ -1716,14 +1585,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25641027">
           <caret line="1" column="10" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/yml/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gaohuan-application/src/main/java/com/gaohuan/jwt/JwtUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.515982">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5714286">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding />
         </state>
       </provider>
