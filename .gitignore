@@ -2,6 +2,7 @@
 .idea
 *.iml
 gaohuan-application/target
+gaohuan-application/logs
 gaohuan-concurrent-biz/target
 shiro-oauth2-client/target
 shiro-oauth2-server/target
