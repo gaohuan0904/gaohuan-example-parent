@@ -1,8 +1,10 @@
 *.class
-/.idea
-/gaohuan-application/target
-/gaohuan-concurrent-biz/target
-/shiro-oauth2-client/target
-/shiro-oauth2-server/target
-/gaohuan-jms/target
+.idea
+gaohuan-application/target
+gaohuan-concurrent-biz/target
+shiro-oauth2-client/target
+shiro-oauth2-server/target
+gaohuan-jms/target
 *.iml
+.idea/workspace.xml
+.idea/tasks.xml
