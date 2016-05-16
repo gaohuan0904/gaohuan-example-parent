@@ -100,12 +100,6 @@
             <artifactId>jedis</artifactId>
             <version>2.6.2</version>
         </dependency>
-        <dependency>
-            <groupId>com.jingtum.rifle</groupId>
-            <artifactId>base-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
         <!--test-->
         <dependency>
             <groupId>org.springframework</groupId>

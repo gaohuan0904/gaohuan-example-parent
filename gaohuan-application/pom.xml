@@ -110,12 +110,6 @@
             <artifactId>aspectjweaver</artifactId>
             <version>1.7.4</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.opensymphony.quartz</groupId>-->
-            <!--<artifactId>quartz</artifactId>-->
-            <!--<version>1.6.1</version>-->
-        <!--</dependency>-->
-
         <dependency>
             <groupId>cn.jpush.api</groupId>
             <artifactId>jpush-client</artifactId>
@@ -218,7 +212,6 @@
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
             <version>1.16</version>
-            <scope>runtime</scope>
         </dependency>
 
     </dependencies>
