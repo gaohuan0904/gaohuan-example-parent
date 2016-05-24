@@ -10,6 +10,7 @@ public class Person {
     private Person spouse;
     private Person[] children;
 
+
     public String getName() {
         return name;
     }
