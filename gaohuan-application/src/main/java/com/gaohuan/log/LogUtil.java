@@ -11,11 +11,9 @@ public class LogUtil {
     public static final Logger logger = LoggerFactory.getLogger(LogUtil.class);
 
     public static void main(String[] args) {
-        try {
-            int a = 6 / 0;
-        } catch (Exception e) {
-            logger.error(e.getMessage(),e);
-        }
-
+        logger.debug("debug");
+        logger.info("info");
+        logger.warn("warn");
+        logger.error("error");
     }
 }

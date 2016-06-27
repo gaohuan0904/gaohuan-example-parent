@@ -10,7 +10,10 @@ public class LogTest {
     public static final Logger logger = LoggerFactory.getLogger(LogTest.class);
 
     public static void main(String[] args) {
-
+        logger.debug("debug");
+        logger.info("info");
+        logger.warn("warn");
+        logger.error("error");
     }
 }
 

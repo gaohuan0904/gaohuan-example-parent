@@ -11,7 +11,7 @@
     <name>shiro-oauth2-client</name>
 
     <parent>
-        <groupId>com.gaohuan.redisUtils</groupId>
+        <groupId>com.gaohuan.example</groupId>
         <artifactId>gaohaun-exmpale-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
