@@ -29,6 +29,7 @@
         <module>shiro-oauth2-server</module>
         <module>gaohuan-concurrent-biz</module>
         <module>gaohuan-spring-security</module>
+        <module>gaohuan-mybatis</module>
     </modules>
     <build>
         <plugins>

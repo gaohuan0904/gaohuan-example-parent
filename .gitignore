@@ -9,5 +9,6 @@ shiro-oauth2-server/target
 gaohuan-jms/target
 gaohuan-spring-security/target
 gaohuan-websocket/target
+gaohuan-mybatis/target
 
 /out/

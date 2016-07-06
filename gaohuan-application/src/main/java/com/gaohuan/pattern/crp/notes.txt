@@ -1,0 +1,2 @@
+合成复用原则
+合成复用原则(Composite Reuse Principle, CRP)：尽量使用对象组合，而不是继承来达到复用的目的。

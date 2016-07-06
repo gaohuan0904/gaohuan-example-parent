@@ -1,0 +1,2 @@
+里氏代换原则
+ 里氏代换原则(Liskov Substitution Principle, LSP)：所有引用基类（父类）的地方必须能透明地使用其子类的对象

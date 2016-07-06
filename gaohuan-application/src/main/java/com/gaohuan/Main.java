@@ -7,7 +7,8 @@ import org.apache.commons.lang.ArrayUtils;
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println(System.currentTimeMillis());
+        System.out.println(Main.class.getResource("").getPath() + "config.xml");
+
     }
 
     public static boolean isNotEmpty(Object... params) {
