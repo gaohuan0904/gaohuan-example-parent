@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/rabbit http://www.springframework.org/schema/rabbit/spring-rabbit-1.0.xsd">
 
     <bean id="dataSourceA" class="com.atomikos.jdbc.AtomikosDataSourceBean" init-method="init" destroy-method="close">
         <property name="uniqueResourceName" value="db/dataSourceA"/>
@@ -34,6 +35,11 @@
         <property name="reapTimeout" value="2000"/>
 
     </bean>
+    <bean id="xaRabbitConnectionFactory" class="com.atomikos.jms.AtomikosConnectionFactoryBean" init-method="init"
+          destroy-method="close">
+        <property name="uniqueResourceName" value="amq1"/>
+        <property name="xaConnectionFactory" ref="rabbitConnectionFactory"/>
+    </bean>
 
     <bean id="userTransactionManager" class="com.atomikos.icatch.jta.UserTransactionManager">
         <property name="forceShutdown" value="true"/>
@@ -45,5 +51,32 @@
         <property name="userTransaction" ref="userTransaction"/>
         <property name="transactionManager" ref="userTransactionManager"/>
     </bean>
+
+
+    <!--rabbit-->
+
+    <rabbit:connection-factory id="rabbitConnectionFactory" host="localhost" port="5672"/>
+
+    <rabbit:admin connection-factory="rabbitConnectionFactory"/>
+
+    <rabbit:queue id="rabbit_queue" durable="true" auto-delete="false" exclusive="false" name="rabbit_queue"/>
+
+    <rabbit:direct-exchange id="rabbit_exchange" name="rabbit_exchange" durable="true" auto-delete="true">
+        <rabbit:bindings>
+            <rabbit:binding queue="rabbit_queue" key="rabbit_queue_key"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:direct-exchange>
+
+    <rabbit:template exchange="rabbit_exchange" id="rabbitTemplate" connection-factory="rabbitConnectionFactory"/>
+
+    <rabbit:listener-container connection-factory="rabbitConnectionFactory">
+        <rabbit:listener ref="rabbitConsumer" method="onMessage" queue-names="rabbit_queue"/>
+    </rabbit:listener-container>
+
+    <bean id="rabbitProducer" class="com.gaohuan.jta.RabbitProducer">
+        <property name="rabbitTemplate" ref="rabbitTemplate"/>
+    </bean>
+
+    <bean id="rabbitConsumer" class="com.gaohuan.jta.RabbitConsumer"/>
 
 </beans>

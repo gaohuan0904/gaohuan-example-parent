@@ -18,7 +18,10 @@ import java.sql.PreparedStatement;
 public class JtaMain {
 
     public static void main(String[] args) throws SystemException {
+
         ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:jta/spring-jta.xml");
+
+        //jta demo
         AtomikosDataSourceBean dataSourceA = (AtomikosDataSourceBean) ctx.getBean("dataSourceA");
         AtomikosDataSourceBean dataSourceB = (AtomikosDataSourceBean) ctx.getBean("dataSourceB");
         JtaTransactionManager jtaTransactionManager = (JtaTransactionManager) ctx.getBean("transactionManager");
@@ -38,6 +41,10 @@ public class JtaMain {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        //rabbit demo
+        RabbitProducer rabbitProducer = (RabbitProducer) ctx.getBean("rabbitProducer");
+        rabbitProducer.send("test-rabbit");
 
     }
 }

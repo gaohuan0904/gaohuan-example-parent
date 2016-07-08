@@ -30,6 +30,8 @@
         <module>gaohuan-concurrent-biz</module>
         <module>gaohuan-spring-security</module>
         <module>gaohuan-mybatis</module>
+        <module>gaohuan-spring-session</module>
+        <module>gaohuan-common</module>
     </modules>
     <build>
         <plugins>
