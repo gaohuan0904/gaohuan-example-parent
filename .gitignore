@@ -8,6 +8,7 @@ gaohuan-spring-security/target
 gaohuan-websocket/target
 gaohuan-mybatis/target
 .idea/
+.idea
 /out/
 
 *.class
