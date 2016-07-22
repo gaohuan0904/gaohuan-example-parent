@@ -14,13 +14,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>Sonatype-public</id>
-            <name>SnakeYAML repository</name>
-            <url>http://oss.sonatype.org/content/groups/public/</url>
-        </repository>
-    </repositories>
+    <!--<repositories>-->
+    <!--<repository>-->
+    <!--<id>Sonatype-public</id>-->
+    <!--<name>SnakeYAML repository</name>-->
+    <!--<url>https://oss.sonatype.org/content/groups/public/</url>-->
+    <!--</repository>-->
+    <!--</repositories>-->
 
     <modules>
         <module>gaohuan-application</module>
@@ -32,6 +32,7 @@
         <module>gaohuan-mybatis</module>
         <module>gaohuan-spring-session</module>
         <module>gaohuan-common</module>
+        <module>gaohuan-websocket</module>
     </modules>
     <build>
         <plugins>
