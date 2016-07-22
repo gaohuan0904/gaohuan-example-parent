@@ -1,6 +1,5 @@
 package com.gaohuan.spring;
 
-import org.junit.Test;
 import org.springframework.core.task.AsyncTaskExecutor;
 import org.springframework.core.task.SimpleAsyncTaskExecutor;
 
@@ -9,8 +8,11 @@ import org.springframework.core.task.SimpleAsyncTaskExecutor;
  */
 public class AsyncTaskExecutorTest {
 
-    @Test
-    public void test() {
+    public static void main(String[] args) {
+        test();
+    }
+
+    public static void test() {
         AsyncTaskExecutor taskExecutor = new SimpleAsyncTaskExecutor();
         System.out.println("start");
         taskExecutor.execute(new AsyncTask());

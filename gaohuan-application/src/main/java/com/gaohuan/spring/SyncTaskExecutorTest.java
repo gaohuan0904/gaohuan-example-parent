@@ -1,6 +1,5 @@
 package com.gaohuan.spring;
 
-import org.junit.Test;
 import org.springframework.core.task.SyncTaskExecutor;
 
 /**
@@ -8,8 +7,11 @@ import org.springframework.core.task.SyncTaskExecutor;
  */
 public class SyncTaskExecutorTest {
 
-    @Test
-    public void test() {
+    public static void main(String[] args) {
+        test();
+    }
+
+    public static void test() {
         SyncTaskExecutor taskExecutor = new SyncTaskExecutor();
         System.out.println("syncTask start");
         taskExecutor.execute(new SyncTask());
