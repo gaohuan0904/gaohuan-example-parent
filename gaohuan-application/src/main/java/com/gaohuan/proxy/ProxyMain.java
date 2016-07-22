@@ -5,7 +5,7 @@ import java.lang.reflect.Proxy;
 /**
  * jdk 动态代理
  */
-public class Main {
+public class ProxyMain {
     public static void main(String[] args) {
         PeopleInvocationHandler invocationHandler = new PeopleInvocationHandler(new PeopleImpl());
         invocationHandler.setInterceptor(new LogInterceptor());

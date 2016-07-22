@@ -25,8 +25,8 @@
     <modules>
         <module>gaohuan-application</module>
         <module>gaohuan-jms</module>
-        <module>shiro-oauth2-client</module>
-        <module>shiro-oauth2-server</module>
+        <!--<module>shiro-oauth2-client</module>-->
+        <!--<module>shiro-oauth2-server</module>-->
         <module>gaohuan-concurrent-biz</module>
         <module>gaohuan-spring-security</module>
         <module>gaohuan-mybatis</module>

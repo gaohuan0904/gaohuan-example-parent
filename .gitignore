@@ -1,8 +1,6 @@
 gaohuan-application/target
 gaohuan-application/logs
 gaohuan-concurrent-biz/target
-shiro-oauth2-client/target
-shiro-oauth2-server/target
 gaohuan-jms/target
 gaohuan-spring-security/target
 gaohuan-websocket/target
@@ -10,8 +8,6 @@ gaohuan-mybatis/target
 gaohuan-spring-session/target
 gaohuan-common/target
 .idea/
-.idea
 /out/
-
 *.class
 *.iml
