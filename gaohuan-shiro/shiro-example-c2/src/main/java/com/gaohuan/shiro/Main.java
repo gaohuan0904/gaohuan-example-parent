@@ -27,7 +27,7 @@ public class Main {
         } catch (AuthenticationException e) {
             e.printStackTrace();
         }
-        System.out.println("isAuthenticated:" + subject.isAuthenticated());
+        logger.debug("isAuthenticated:" + subject.isAuthenticated());
         subject.logout();
     }
 }

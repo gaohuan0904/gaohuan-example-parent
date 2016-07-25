@@ -4,10 +4,21 @@ package com.gaohuan.shiro.realm;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.realm.Realm;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by acer on 2016/7/25.
  */
 public class CustomRealm implements Realm {
+
+    public static final Map<String, String> principalMap = new HashMap<String, String>();
+
+    static {
+        principalMap.put("zhang", "123");
+        principalMap.put("wang", "123");
+    }
+
     @Override
     public String getName() {
         return "customRealm";
@@ -23,10 +34,10 @@ public class CustomRealm implements Realm {
 
         String username = (String) token.getPrincipal();
         String password = new String((char[]) token.getCredentials());
-        if (!"zhang".equals(username)) {
+        if (!principalMap.keySet().contains(username)) {
             throw new UnknownAccountException();
         }
-        if (!"123".equals(password)) {
+        if (!principalMap.values().contains(password)) {
             throw new IncorrectCredentialsException();
         }
         return new SimpleAuthenticationInfo(username, password, getName());
