@@ -7,6 +7,8 @@ gaohuan-websocket/target
 gaohuan-mybatis/target
 gaohuan-spring-session/target
 gaohuan-common/target
+gaohuan-shiro/shiro-example-c1/target
+gaohuan-shiro/shiro-example-c2/target
 .idea/
 /out/
 *.class
