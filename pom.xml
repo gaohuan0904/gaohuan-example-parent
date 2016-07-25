@@ -320,6 +320,11 @@
                 <artifactId>slf4j-api</artifactId>
                 <version>1.7.21</version>
             </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.0.4</version>
+            </dependency>
 
 
         </dependencies>
