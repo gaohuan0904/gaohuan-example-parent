@@ -9,6 +9,7 @@ gaohuan-spring-session/target
 gaohuan-common/target
 gaohuan-shiro/shiro-example-c1/target
 gaohuan-shiro/shiro-example-c2/target
+gaohuan-shiro/shiro-example-c3/target
 .idea/
 /out/
 *.class
