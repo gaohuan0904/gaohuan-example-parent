@@ -1,5 +1,6 @@
 package com.gaohuan;
 
+import com.gaohuan.spring.HelloBean;
 import org.apache.commons.lang.ArrayUtils;
 
 import java.lang.reflect.Array;
@@ -14,7 +15,13 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-
+        try {
+            Class<HelloWorld> t = (Class<HelloWorld>) Class.forName("com.gaohuan.HelloWorld");
+            HelloWorld h = t.newInstance();
+            h.hello();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

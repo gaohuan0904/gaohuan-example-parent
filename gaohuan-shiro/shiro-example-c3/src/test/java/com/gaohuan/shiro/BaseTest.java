@@ -94,4 +94,8 @@ public abstract class BaseTest {
 
     }
 
+    public Subject subject() {
+        return SecurityUtils.getSubject();
+    }
+
 }
