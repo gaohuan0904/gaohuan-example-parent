@@ -21,6 +21,6 @@ public class MybatisTest {
 
     @Test
     public void test() {
-        collectionDao.selectOne("1");
+        collectionDao.queryCollection("1", "1");
     }
 }
