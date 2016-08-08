@@ -1,4 +1,4 @@
-package com.gaohuan.code.generator;
+package com.gaohuan.generator;
 
 import java.util.HashMap;
 import java.util.Map;

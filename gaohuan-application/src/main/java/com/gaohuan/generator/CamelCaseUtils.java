@@ -1,4 +1,4 @@
-package com.gaohuan.code.generator;
+package com.gaohuan.generator;
 
 /**
  * Created by gh on 2015/12/3.

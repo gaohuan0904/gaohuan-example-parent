@@ -1,4 +1,4 @@
-package com.gaohuan.code.generator;
+package com.gaohuan.generator;
 
 import freemarker.template.TemplateException;
 import org.apache.commons.collections.CollectionUtils;

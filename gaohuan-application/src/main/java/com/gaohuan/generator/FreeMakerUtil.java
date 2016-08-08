@@ -1,4 +1,4 @@
-package com.gaohuan.code.generator;
+package com.gaohuan.generator;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;

@@ -1,4 +1,4 @@
-package com.gaohuan.code.generator;
+package com.gaohuan.generator;
 
 import org.apache.commons.dbcp.BasicDataSource;
 

@@ -1,4 +1,4 @@
-package com.gaohuan.digest.samples;
+package com.gaohuan.digest;
 
 import org.apache.commons.codec.DecoderException;
 
