@@ -1,8 +1,4 @@
-package com.gaohuan.algorithm.quicksort;
-
-import org.apache.commons.lang3.RandomUtils;
-
-import java.util.Arrays;
+package com.gaohuan.algorithm.sort;
 
 /**
  * 快速排序：

@@ -6,7 +6,7 @@ import org.activiti.engine.ProcessEngines;
 /**
  * Created by huan on 2016/2/28.
  */
-public class ActivitiTest {
+public class ActivityTest {
     public static void main(String[] args) {
         ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
     }

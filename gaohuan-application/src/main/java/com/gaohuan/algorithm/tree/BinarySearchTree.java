@@ -1,4 +1,4 @@
-package com.gaohuan.algorithm;
+package com.gaohuan.algorithm.tree;
 
 import com.alibaba.fastjson.JSON;
 
@@ -227,8 +227,8 @@ public class BinarySearchTree {
         searchTree.remove(1);
         searchTree.print(searchTree.getRootNode());
 
-        BinaryNode minNode = searchTree.minNode(searchTree.getRootNode());
-        System.out.println(minNode.data);
+        BinarySearchTree.BinaryNode minNode = searchTree.minNode(searchTree.getRootNode());
+        System.out.println(minNode.getData());
     }
 
 }

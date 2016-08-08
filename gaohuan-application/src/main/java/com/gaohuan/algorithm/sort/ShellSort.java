@@ -1,4 +1,4 @@
-package com.gaohuan.algorithm;
+package com.gaohuan.algorithm.sort;
 
 /**
  * 希尔排序：插入排序的变种，取一个步长作为间隔分成数个组，每个组进行插入排序，减小步长直到1。不稳定
