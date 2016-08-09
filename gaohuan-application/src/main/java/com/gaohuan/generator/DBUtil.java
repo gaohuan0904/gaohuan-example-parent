@@ -9,7 +9,7 @@ import java.util.*;
 /**
  * Created by gh on 2015/12/2.
  */
-public class DBUtil {
+public class DbUtil {
     private static BasicDataSource basicDataSource;
 
     static {

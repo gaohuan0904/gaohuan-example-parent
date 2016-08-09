@@ -42,38 +42,6 @@ public class UserDataGenerator {
 
     }
 
-    public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:user-data-generator.xml");
-        JdbcTemplate jdbcTemplate = context.getBean(JdbcTemplate.class);
-        String sql = "INSERT INTO zk.t_user " +
-                "(uid, user_code, phone, user_name, sex, create_date,channel,delete_flag,password)" +
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
-
-        List<User> userList = generateUsers();
-
-        jdbcTemplate.batchUpdate(sql, new BatchPreparedStatementSetter() {
-            @Override
-            public void setValues(PreparedStatement ps, int i) throws SQLException {
-                User user = userList.get(i);
-                ps.setString(1, user.getUid());
-                ps.setString(2, user.getUsercode());
-                ps.setString(3, user.getPhone());
-                ps.setString(4, user.getName());
-                ps.setString(5, user.getSex());
-                ps.setDate(6, user.getCreateDate());
-                ps.setString(7, user.getChannel());
-                ps.setString(8, user.getDeleteFlag());
-                ps.setString(9, user.getPassword());
-            }
-
-            @Override
-            public int getBatchSize() {
-                return userList.size();
-            }
-        });
-
-
-    }
 
     public static List<User> generateUsers() {
         List<User> userList = new ArrayList<User>();
@@ -124,6 +92,39 @@ public class UserDataGenerator {
             nickName = RandomStringUtils.randomAlphanumeric(RandomUtils.nextInt(5, 20));
         }
         return nickName;
+    }
+
+    public static void main(String[] args) {
+        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:user-data-generator.xml");
+        JdbcTemplate jdbcTemplate = context.getBean(JdbcTemplate.class);
+        String sql = "INSERT INTO zk.t_user " +
+                "(uid, user_code, phone, user_name, sex, create_date,channel,delete_flag,password)" +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+        List<User> userList = generateUsers();
+
+        jdbcTemplate.batchUpdate(sql, new BatchPreparedStatementSetter() {
+            @Override
+            public void setValues(PreparedStatement ps, int i) throws SQLException {
+                User user = userList.get(i);
+                ps.setString(1, user.getUid());
+                ps.setString(2, user.getUsercode());
+                ps.setString(3, user.getPhone());
+                ps.setString(4, user.getName());
+                ps.setString(5, user.getSex());
+                ps.setDate(6, user.getCreateDate());
+                ps.setString(7, user.getChannel());
+                ps.setString(8, user.getDeleteFlag());
+                ps.setString(9, user.getPassword());
+            }
+
+            @Override
+            public int getBatchSize() {
+                return userList.size();
+            }
+        });
+
+
     }
 
 

@@ -50,7 +50,7 @@ public class CodeGenerator {
                 "t_member"
         );
 
-        List<Map> models = DBUtil.makeModelMap(list);
+        List<Map> models = DbUtil.makeModelMap(list);
 
         generateModel(models);
 
@@ -71,10 +71,9 @@ public class CodeGenerator {
                 String subPath = "java" + File.separator;
                 String fileName = model.get("className") + ".java";
                 //生成文件
-                FreeMakerUtil.process(model, FreeMakerUtil.TEMPLATE_JAVA_MAPPER_FILE, targetPath + subPath + fileName);
+                FreeMakerUtils.process(model, FreeMakerUtils.TEMPLATE_JAVA_MAPPER_FILE, targetPath + subPath + fileName);
             }
         }
-
 
     }
 
@@ -88,7 +87,7 @@ public class CodeGenerator {
             for (Map model : models) {
                 String fileName = model.get("className") + "Mapper.xml";
                 //生成文件
-                FreeMakerUtil.process(model, FreeMakerUtil.TEMPLATE_MAPPER_FILE, targetPath + fileName);
+                FreeMakerUtils.process(model, FreeMakerUtils.TEMPLATE_MAPPER_FILE, targetPath + fileName);
             }
         }
 
@@ -103,8 +102,8 @@ public class CodeGenerator {
                 String serviceName = model.get("className") + "Service.java";
                 String serviceImplName = model.get("className") + "ServiceImpl.java";
                 //生成文件
-                FreeMakerUtil.process(model, FreeMakerUtil.TEMPLATE_SERVICE_FILE, targetPath + subServicePath + serviceName);
-                FreeMakerUtil.process(model, FreeMakerUtil.TEMPLATE_SERVICEIMPL_FILE, targetPath + subServiceImplPath + serviceImplName);
+                FreeMakerUtils.process(model, FreeMakerUtils.TEMPLATE_SERVICE_FILE, targetPath + subServicePath + serviceName);
+                FreeMakerUtils.process(model, FreeMakerUtils.TEMPLATE_SERVICEIMPL_FILE, targetPath + subServiceImplPath + serviceImplName);
             }
         }
 
