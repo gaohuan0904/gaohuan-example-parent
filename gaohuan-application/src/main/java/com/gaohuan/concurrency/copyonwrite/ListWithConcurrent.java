@@ -6,6 +6,8 @@ import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * CopyOnWriteArrayList 修改时会把数据copy一份再修改，然后再把原来的数组引用指向新的数组。
@@ -23,24 +25,56 @@ public class ListWithConcurrent {
         list.add("c");
         list.add("d");
         list.add("e");
-        Thread t = new Thread(new Runnable() {
-            int count = 1;
+        ExecutorService executor = Executors.newFixedThreadPool(3);
+        executor.execute(new WriterTask(list));
+        executor.execute(new ReaderTask(list));
+        executor.execute(new ReaderTask(list));
 
-            @Override
-            public void run() {
-                while (true) {
-                    list.add((count++) + "");
-                    logger.debug("count:" + count);
-                }
-            }
-        });
-        //守护线程，当所有非守护线程结束时，守护线程才会退出
-        t.setDaemon(true);
-        t.start();
-        Thread.currentThread().sleep(3);
-        for (String s : list) {
-            logger.debug("s:" + s + ",hashCode of list:" + list.hashCode());
+
+    }
+
+    static class WriterTask implements Runnable {
+        private CopyOnWriteArrayList<String> list;
+
+        public WriterTask(CopyOnWriteArrayList list) {
+            this.list = list;
         }
 
+        @Override
+        public void run() {
+            int count = 1;
+            while (true) {
+                list.add(String.valueOf(count++));
+                logger.info("writer:" + count);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    static class ReaderTask implements Runnable {
+        private CopyOnWriteArrayList<String> list;
+
+        public ReaderTask(CopyOnWriteArrayList list) {
+            this.list = list;
+        }
+
+        @Override
+        public void run() {
+//            while (true) {
+            for (String s : list) {
+                logger.info("reader:" + s + ",hasCode of List:" + list.hashCode());
+            }
+//                try {
+//                    Thread.sleep(100);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+
+        }
     }
 }

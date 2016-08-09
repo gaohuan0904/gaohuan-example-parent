@@ -7,6 +7,7 @@ import java.lang.reflect.Array;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +16,7 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
+        /*
         try {
             Class<HelloWorld> t = (Class<HelloWorld>) Class.forName("com.gaohuan.HelloWorld");
             HelloWorld h = t.newInstance();
@@ -22,6 +24,12 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        */
+        LocalDate localDate = LocalDate.now();
+        System.out.println(localDate.getYear());
+        System.out.println(localDate.getMonthValue());
+        System.out.println(localDate.getDayOfMonth());
+
     }
 
 }
