@@ -1,4 +1,4 @@
-package com.gaohuan.quartz.springquartz;
+package com.gaohuan.quartz;
 
 import org.quartz.Scheduler;
 import org.quartz.SchedulerException;

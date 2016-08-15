@@ -6,6 +6,6 @@ package com.gaohuan.proxy;
 public class PeopleImpl implements People {
     @Override
     public void say() {
-        System.out.println("people say something");
+        System.out.println("people handleName something");
     }
 }
