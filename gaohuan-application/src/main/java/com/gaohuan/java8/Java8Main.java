@@ -1,9 +1,11 @@
 package com.gaohuan.java8;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.nio.channels.SeekableByteChannel;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.nio.charset.Charset;
+import java.nio.file.*;
+import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Spliterator;
@@ -16,9 +18,6 @@ import java.util.function.Function;
  * <p>Date: 2016/8/12
  */
 public class Java8Main {
-    public static void main(String[] args) {
-        test2();
-    }
 
     public static void test1() {
         Package[] packages;
@@ -52,14 +51,46 @@ public class Java8Main {
 
     }
 
-    public void test3() {
+    public static void test3() {
+        SimpleFileVisitor fileVisitor = new SimpleFileVisitor<Path>() {
 
+            @Override
+            public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+                System.out.println(file);
+                return super.visitFile(file, attrs);
+            }
+        };
+
+        try {
+            Files.walkFileTree(Paths.get("D:\\idea-work\\gaohuan-example-parent\\gaohuan-application\\src\\main\\java\\com\\gaohuan\\java8"), fileVisitor);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 字符转字节
+     *
+     * @param c
+     * @return
+     */
+    public static byte[] charToByte(char c) {
+        //Unicode常用1平面下，一个unicode对应2个字节
+        byte[] b = new byte[2];
+        b[0] = (byte) ((c & 0xff00) >> 8);//取高8位，然后右移8位
+        b[1] = (byte) (c & 0xff);//取低8位
+        return b;
     }
 
     public static void doFunc(List list, Consumer consumer) {
         Spliterator spliterator = list.spliterator();
         while (spliterator.tryAdvance(consumer)) ;
         System.out.println();
+    }
+
+    public static void main(String[] args) {
+
+        test3();
     }
 
 }

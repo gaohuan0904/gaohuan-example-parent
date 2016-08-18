@@ -1,14 +1,17 @@
 import java.nio.ByteBuffer
+import java.nio.channels.FileChannel
 import java.nio.channels.SeekableByteChannel
 import java.nio.charset.Charset
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
+import java.nio.file.StandardOpenOption
 import java.nio.file.attribute.FileAttribute
 import java.util.concurrent.Callable
 import java.util.function.Consumer
 
 String path = "D:\\idea-work\\gaohuan-example-parent\\gaohuan-application\\src\\main\\java\\com\\gaohuan\\java8\\GroovyMain.groovy";
+String toFile = "D:\\idea-work\\gaohuan-example-parent\\gaohuan-application\\src\\main\\java\\com\\gaohuan\\java8\\toFile.txt";
 /*
 List<String> lines = Files.readAllLines(Paths.get(path));
 
@@ -17,6 +20,7 @@ Consumer consumer={s->println(s)};
 lines.forEach(consumer);
 
 */
+/*
 try {
     int count;
     SeekableByteChannel fChan = Files.newByteChannel(Paths.get(path));
@@ -30,3 +34,20 @@ try {
 } finally {
     fChan.close();
 }
+*/
+FileChannel fileChannel;
+try {
+    fileChannel = Files.newByteChannel(Paths.get(toFile), StandardOpenOption.WRITE, StandardOpenOption.CREATE);
+    ByteBuffer buffer = ByteBuffer.allocate(26);
+    for (int i = 0; i < 26; i++) {
+        int b = (int) 'A' + i;
+        buffer.put((byte) b);
+    }
+    buffer.rewind();
+    fileChannel.write(buffer);
+} finally {
+    if (fileChannel != null) {
+        fileChannel.close();
+    }
+}
+
