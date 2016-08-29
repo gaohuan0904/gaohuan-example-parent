@@ -9,6 +9,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Spliterator;
+import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
@@ -51,9 +52,11 @@ public class Java8Main {
 
     }
 
+    /**
+     * 遍历文件
+     */
     public static void test3() {
         SimpleFileVisitor fileVisitor = new SimpleFileVisitor<Path>() {
-
             @Override
             public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
                 System.out.println(file);
@@ -66,6 +69,15 @@ public class Java8Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * 锁
+     * 锁的工作原理：
+     * 在访问共享资源之前，申请用户保护资源的锁，当资源访问完成时释放锁。
+     * 如果当某个线程正在使用锁时，另一个线程尝试申请锁，会被挂起。
+     */
+    public static void test4() {
     }
 
     /**
