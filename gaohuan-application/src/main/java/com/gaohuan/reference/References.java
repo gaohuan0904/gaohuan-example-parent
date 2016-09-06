@@ -1,9 +1,9 @@
 package com.gaohuan.reference;
 
-import java.lang.ref.PhantomReference;
-import java.lang.ref.Reference;
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.WeakReference;
+import java.lang.ref.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 /**
  * <p>User: GaoHuan
@@ -16,7 +16,8 @@ public class References {
         WeakReference weakRef;
         PhantomReference phantomRef;
         ReferenceQueue weakQueue, phantomQueue;
-
+        SoftReference softRef;
+        /*
         weakObj = new String("Weak Reference");
         phantomObj = new String("Phantom Reference");
         weakQueue = new ReferenceQueue();
@@ -32,6 +33,32 @@ public class References {
         phantomObj = null;
         System.gc();
         System.out.println("weak queued:" + weakRef.isEnqueued());
+        if (!phantomRef.isEnqueued()) {
+            System.out.println("requestion finalization");
+            System.runFinalization();
+        }
+        System.out.println("Pantom Queued:" + phantomRef.isEnqueued());
+
+        try {
+            ref = weakQueue.remove();
+            System.out.println("Weak Reference:" + ref.get());
+            ref = phantomQueue.remove();
+            System.out.println("Phantom Reference:" + ref.get());
+            ref.clear();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        */
+        /*
+        System.out.println("--------------------------------");
+        weakObj = new Object();
+        weakQueue = new ReferenceQueue();
+        weakRef = new WeakReference(weakObj, weakQueue);
+        weakObj = null;//help gc
+        System.out.println("before gc:" + weakRef.get());
+        System.gc();
+        System.out.println("after gc:" + weakRef.get());
+        */
 
     }
 }

@@ -24,6 +24,7 @@
         <module>gaohuan-websocket</module>
         <module>gaohuan-shiro</module>
         <module>gaohuan-shiro/shiro-example-c3</module>
+        <module>gaohuan-thrift</module>
     </modules>
 
 
