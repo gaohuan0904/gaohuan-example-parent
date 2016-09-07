@@ -1,6 +1,4 @@
-package com.gaohuan.demo;
-
-import org.apache.commons.codec.binary.Base64;
+package com.gaohuan.aes;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
