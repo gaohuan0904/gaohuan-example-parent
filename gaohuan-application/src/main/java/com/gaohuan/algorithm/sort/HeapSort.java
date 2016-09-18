@@ -25,7 +25,7 @@ public class HeapSort {
         for (int i = length - 1; i > 0; i--) {
             //构建堆
             buildHeap(data, i);
-            //交换数据
+            //堆顶与堆的最后一个元素交换位置
             swap(data, 0, i);
 
         }
@@ -46,12 +46,14 @@ public class HeapSort {
             //主要作用是以当前点为基础重新构建堆
             while (k * 2 + 1 <= lastIndex) {
                 int biggerIndex = k * 2 + 1;
-
+                //biggerIndex小于lastIndex，既右节点存在，左有节点比较，找出最大的
                 if (biggerIndex < lastIndex && data[biggerIndex] < data[biggerIndex + 1]) {
                     biggerIndex++;
                 }
+                //biggerIndex数据跟父节点比较，如果大于就交换
                 if (data[biggerIndex] > data[k]) {
                     swap(data, k, biggerIndex);
+                    //交换后,以biggerIndex为基点，重新构建基点下面的元素
                     k = biggerIndex;
                 } else {
                     break;
@@ -66,6 +68,13 @@ public class HeapSort {
 
     }
 
+    /**
+     * 递归方式
+     *
+     * @param data
+     * @param k
+     * @param lastIndex
+     */
     public static void buildSubHeap(int[] data, int k, int lastIndex) {
         int l = 2 * k + 1;
         if (l > lastIndex) {
