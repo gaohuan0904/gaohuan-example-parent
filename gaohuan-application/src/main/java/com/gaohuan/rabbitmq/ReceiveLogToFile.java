@@ -1,7 +1,9 @@
 package com.gaohuan.rabbitmq;
 
-import com.alibaba.dubbo.remoting.exchange.Exchangers;
-import com.rabbitmq.client.*;
+import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.QueueingConsumer;
 import org.apache.commons.lang3.time.DateFormatUtils;
 
 import java.io.File;

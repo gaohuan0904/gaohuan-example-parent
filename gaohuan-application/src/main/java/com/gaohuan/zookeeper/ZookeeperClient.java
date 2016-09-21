@@ -3,8 +3,6 @@ package com.gaohuan.zookeeper;
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.Stat;
 
-import java.io.IOException;
-
 /**
  * 练习使用
  */

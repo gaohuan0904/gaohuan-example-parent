@@ -1,7 +1,5 @@
 package com.gaohuan.pattern.tmp;
 
-import java.sql.SQLException;
-
 /**
  * <p>User: acer
  * <p>Date: 2016/7/27

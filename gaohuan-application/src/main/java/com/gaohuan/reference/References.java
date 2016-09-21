@@ -1,9 +1,6 @@
 package com.gaohuan.reference;
 
 import java.lang.ref.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 /**
  * <p>User: GaoHuan

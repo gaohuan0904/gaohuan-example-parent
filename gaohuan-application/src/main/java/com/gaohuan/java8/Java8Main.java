@@ -1,17 +1,12 @@
 package com.gaohuan.java8;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.nio.channels.SeekableByteChannel;
-import java.nio.charset.Charset;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Spliterator;
-import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
-import java.util.function.Function;
 
 /**
  * jdk7 多重捕获异常

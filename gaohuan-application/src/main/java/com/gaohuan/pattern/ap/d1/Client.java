@@ -1,7 +1,5 @@
 package com.gaohuan.pattern.ap.d1;
 
-import org.apache.tools.ant.taskdefs.Tar;
-
 /**
  * <p>User: GaoHuan
  * <p>Date: 2016/8/10

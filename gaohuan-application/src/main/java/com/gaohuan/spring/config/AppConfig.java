@@ -1,7 +1,6 @@
 package com.gaohuan.spring.config;
 
 import com.gaohuan.spring.HelloBean;
-import org.springframework.beans.factory.config.PropertyResourceConfigurer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;

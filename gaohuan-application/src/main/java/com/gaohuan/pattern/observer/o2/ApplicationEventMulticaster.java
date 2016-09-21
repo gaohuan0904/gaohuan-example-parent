@@ -1,6 +1,5 @@
 package com.gaohuan.pattern.observer.o2;
 
-import java.util.List;
 import java.util.Set;
 
 /**

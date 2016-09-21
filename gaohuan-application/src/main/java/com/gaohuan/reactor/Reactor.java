@@ -1,7 +1,5 @@
 package com.gaohuan.reactor;
 
-import com.sun.org.apache.regexp.internal.RE;
-
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;

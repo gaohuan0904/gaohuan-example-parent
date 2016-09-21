@@ -12,9 +12,13 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.io.File;
 import java.io.IOException;
-import java.sql.*;
 import java.sql.Date;
-import java.util.*;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+import java.util.UUID;
 
 /**
  * 批量插入用户表数据

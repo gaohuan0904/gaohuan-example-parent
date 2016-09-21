@@ -1,11 +1,6 @@
 package com.gaohuan.thread.produceconsume3;
 
-import java.util.LinkedList;
-import java.util.Objects;
 import java.util.concurrent.LinkedBlockingDeque;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Created by huan on 2016/2/24.

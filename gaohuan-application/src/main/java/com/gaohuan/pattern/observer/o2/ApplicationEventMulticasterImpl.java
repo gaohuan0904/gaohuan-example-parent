@@ -1,7 +1,6 @@
 package com.gaohuan.pattern.observer.o2;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.concurrent.Executor;
 

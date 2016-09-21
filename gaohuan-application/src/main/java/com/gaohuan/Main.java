@@ -1,17 +1,9 @@
 package com.gaohuan;
 
-import com.gaohuan.spring.HelloBean;
 import com.gaohuan.userdata.User;
-import org.apache.commons.lang.ArrayUtils;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 
-import java.lang.reflect.Array;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by gh on 2016/5/24 0024.

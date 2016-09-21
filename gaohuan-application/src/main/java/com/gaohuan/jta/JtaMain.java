@@ -5,10 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.transaction.jta.JtaTransactionManager;
 
-import javax.sql.DataSource;
-import javax.transaction.NotSupportedException;
 import javax.transaction.SystemException;
-import javax.transaction.TransactionManager;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 

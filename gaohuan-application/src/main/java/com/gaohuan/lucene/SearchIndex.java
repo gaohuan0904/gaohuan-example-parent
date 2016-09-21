@@ -1,6 +1,5 @@
 package com.gaohuan.lucene;
 
-import com.gaohuan.log.LogUtils;
 import org.apache.log4j.Logger;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;

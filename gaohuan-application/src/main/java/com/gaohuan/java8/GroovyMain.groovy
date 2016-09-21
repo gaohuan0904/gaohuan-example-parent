@@ -1,14 +1,8 @@
 import java.nio.ByteBuffer
 import java.nio.channels.FileChannel
-import java.nio.channels.SeekableByteChannel
-import java.nio.charset.Charset
 import java.nio.file.Files
-import java.nio.file.Path
 import java.nio.file.Paths
 import java.nio.file.StandardOpenOption
-import java.nio.file.attribute.FileAttribute
-import java.util.concurrent.Callable
-import java.util.function.Consumer
 
 String path = "D:\\idea-work\\gaohuan-example-parent\\gaohuan-application\\src\\main\\java\\com\\gaohuan\\java8\\GroovyMain.groovy";
 String toFile = "D:\\idea-work\\gaohuan-example-parent\\gaohuan-application\\src\\main\\java\\com\\gaohuan\\java8\\toFile.txt";
